@@ -142,3 +142,82 @@ This completes our section of building and testing the Knowledge Graph.
 
 ## Step 3: Adding Knowledge Graph Query to an AI Agent
 
+Now let's add this Knowledge Graph into an **AI Agent** to invoke this, as part of an **Agentic Workflow**.
+
+1. Let's start by accessing **AI Agent Studio**.
+
+2. Click **New** in the **AI Agent** section. 
+
+3. Let's create a new ai agent with the following properties:
+
+**Name**:`KG Incident Query Agent`
+
+**Description**:
+
+```
+This agent helps users find incidents assigned to a particular user by querying the knowledge graph. It is intended for ServiceNow administrators, support staff, or anyone needing quick access to incident assignment information.
+```
+
+**Ai Agent Role**:
+
+```
+The Incident Query Agent serves as an intelligent assistant that interacts with users to identify and retrieve incidents assigned to specific individuals. It communicates in a clear and professional manner, first gathering the necessary user information and then leveraging the knowledge graph to provide accurate and timely incident lists. The agent is designed to facilitate efficient incident management by streamlining the process of querying and reporting assignments.
+```
+
+**Instruction**:
+
+```
+You are an expert in querying ServiceNow knowledge graph for incident data.
+1. Always ask the name of the user for whom the list needs to be created. Do not proceed if no user name is available. This is an input that will be provided by the user to you, if it is missing.
+2. Once the user name has been provided then move to the next step. 
+3. Query the knowledge graph for incidents assigned to the specified user.
+4. Present a clear and organized list of incidents for the user.
+5. Ensure responses are accurate, concise, and easy to understand.
+```
+
+![AI Agent](screenshots/kg-ai-agent-setup.png)
+
+4. Click **Save and continue**
+
+5. From the **Add tool** menu, select **Knowledge Graph**.
+
+![Add Tool](screenshots/kg-ai-agent-tool.png)
+
+6. In the **Edit Knowledge Graph** section, provide the following inputs:
+- **Name**: `Query the Knowledge Graph`
+- **Description**: `This knowledge graph queries the incidents assigned to a given users`
+- **Select Knowledge Graph**: `KG for Incidents` (This is the Knowledge Graph we created in the earlier step. 
+- **Query Instruction**: `Which incident numbers are assigned to this user?`
+- **Execution Mode**: Autonomous
+- **Display Output**: Yes
+- **Processing Message**: `'Searching the Knowledge Graph'`
+- **Output transformation strategy**: 'Paraphrase`
+
+![KG Tool](screenshots/kg-ai-agent-kg-tool.png)
+
+7. Click **Save**.
+8. We will not be adding any other tool for now. Click **Save and continue**. 
+9. We will not be adding any triggers. Click **Save and continue**. 
+10. Enable **Now Assist Panel**. 
+11. (Optional). Add the following in **Create a processing message**: `'Initiating Knowledge Graph Agent'`
+12. Click **Save and test**.
+
+![AI Agent Final Screen](screenshots/kg-ai-agent-final.png)
+
+13. Select **Ai Agent** under **What to test**. 
+14. Provide the name of the agent. `KG Incident Query Agent`
+15. Click **Start Test**.
+
+![Start Test](screenshots/kg-ai-agent-test.png)
+
+16. You will get the Incident Numbers that are assigned to this user. 
+
+![Test Success](screenshots/kg-ai-agent-test-success.png)
+
+17. This completes our AI Agent with Knowledge Graph section.
+
+
+
+
+
+
