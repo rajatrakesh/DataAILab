@@ -216,6 +216,9 @@ You are an expert in querying ServiceNow knowledge graph for incident data.
 
 17. This completes our AI Agent with Knowledge Graph section.
 
+>Extra Credit: Additional capability to try out. Optional. 
+
+## Step 4: Using Knowledge Graph for Context Filling in Virtual Agent
 
 
 
