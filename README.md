@@ -1,17 +1,15 @@
-# Put AI Agents to work for Service Operations
-## ServiceNow Workshop Lab Guide - Yokohama Release
+# Data and AI Workshop
 
-Welcome to the ServiceNow AI Agents for Service Operations workshop! This hands-on lab guide will give you practical experience with ServiceNow's Generative AI assistant, Now Assist, and AI Agents.
+## ServiceNow Workshop Lab Guide - Yokohama Release P5
+
+Welcome to the ServiceNow Data and AI hands-on lab guide will give you practical experience with ServiceNow's Generative AI assistant, Now Assist, and AI Agents.
 
 ### 🎯 Lab Objectives
 
 By completing this workshop, you will:
-- Enable Now Assist and start using GenAI on Day 1
+- Enable Now Assist and start using GenAI
 - Review the Now Assist and Agents turnkey configuration
-- Learn how Now Assist and ServiceNow Agents improve workflows for different personas:
-  - **The Agent**: Summarize incidents, generate resolution notes, create knowledge articles, analyze monitoring alerts
-  - **The Employee**: Use AI Search and Virtual Agent capabilities
-  - **The Developer**: Generate playbooks, flows, and scripts using Now Assist for Creator
+- Learn to deploy advanced features and capabilities of Now Assist, & AI Agent
 
 ### 📋 Prerequisites
 
@@ -25,11 +23,11 @@ By completing this workshop, you will:
 |---------|-------|----------------|
 | [Lab Configuration](lab-configuration.md) | Initial setup and verification | 5 minutes |
 | [Section 1](section1-start-using-genai.md) | Start using Gen AI on Day 1 | 5 minutes |
-| [Section 2](section2-building-agents-simple.md) | Building Agents and Use Cases | 40 minutes |
-| [Section 3](section3-agent-persona.md) | Now Assist for the Agent Persona | 20 minutes |
-| [Section 4](section4-employee-persona.md) | Now Assist for the Employee Persona | 20 minutes |
-| [Section 5](section5-itops-agent.md) | Now Assist for the IT Ops Agent | 10 minutes |
-| [Section 6](section6-developer-persona.md) | Now Assist for the Developer Persona | 10 minutes |
+| [Section 2](section2-building-agents-simple.md) | Building AI Agents and Use Cases | 40 minutes |
+| [Section 3](section3-design-knowledge-graph.md) | Building Knowledge Graph and AI Agent | 40 minutes |
+| [Section 4](section4-employee-persona.md) | Gen AI Controller Use Case | 20 minutes |
+| [Section 5](section5-building-multiple-agents.md) | Knowledge Q&A in VA and AI Search | 10 minutes |
+| [Section 6](section6-developer-persona.md) | LLM Topic Builder and Virtual Agent  | 10 minutes |
 | [Section 7](section7-skill-kit.md) | Now Assist Skill Kit | 5 minutes |
 
 ### 📚 Additional Resources
