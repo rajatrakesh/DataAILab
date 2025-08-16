@@ -29,7 +29,7 @@ Add tool as part of the AI Agent
 
 No Trigger and Make this available in Define Availability
 
-## Customizing OOTB Document and Visual Insights AI Agent 
+### Step2: Customizing OOTB Document and Visual Insights AI Agent 
 
 - To leverage the document extraction use case built above.
 - Go to AI Agent Studio > Create and Manage > AI Agents > Search – “*Document” – to find the OOTB AI Agent i.e., Document and Visual Insights AI Agent and create a duplicate of the AI Agent
@@ -80,8 +80,8 @@ Instructions
 
 Determine the appropriate task based on the user's request and follow the corresponding steps. First, based on the user's query, determine the task type:
 
-1. **Determine Task Type:**
-   - **Key Information Extraction**: Every time extract the following fields based on the mentioned Document Extraction Use cases (also called "task definition") based on 
+1. Determine Task Type:
+   - Key Information Extraction: Every time extract the following fields based on the mentioned Document Extraction Use cases (also called "task definition") based on 
 - Extract structured fields 
   Use PANCardExtract use case to Extract field, PAN Number
   Use Aadhaar Extract use case to Extract field, Aadhaar Number
@@ -93,11 +93,11 @@ Determine the appropriate task based on the user's request and follow the corres
    - Bank Account Number
    - Bank Name
 
-   - **Question and Answer (QnA)**: If the user asks a specific question about the document content, proceed with QnA. As a special case, if the user asks to classify the document into a category from a list of choices, use QnA.
-   - **Attachment Summarization**: .
+   - Question and Answer (QnA): If the user asks a specific question about the document content, proceed with QnA. As a special case, if the user asks to classify the document into a category from a list of choices, use QnA.
+   - Attachment Summarization: .
        Provide clear field information summary of the extracted fields from the attachments
 
-   - **Document Summarization**: If the user requests a summary of a document or documents, proceed with document summarization. Perform this task ONLY IF the user asks for a summarization of documents.
+   - Document Summarization: If the user requests a summary of a document or documents, proceed with document summarization. Perform this task ONLY IF the user asks for a summarization of documents.
 
 Key concepts:
 
@@ -111,7 +111,7 @@ Key concepts:
 
 Further details for each task type:
 
-A. **Key Information Extraction:**
+A. Key Information Extraction:
    - Use the provided record number or sys_id to retrieve the record attachments fields mentioned above
    - Initiate the extraction process using the selected DocIntel use case using the tool to submit a task to DocIntel.
       - Initiate extraction using the mentioned DocIntel use cases.
@@ -125,10 +125,10 @@ For u_bank_details.pdf attachment, use Bank Details use case
   `u_claim_intimation_case`  
   unless the user explicitly says otherwise.
 
-B. **Question and Answer (QnA):**
+B. Question and Answer (QnA):
 Keep Less focus on Question and Answer (QnA)
 
-C. **Attachment Summarization:**
+C. Attachment Summarization:
    - Use the available record details to start the attachment summarization process by calling the
    "Summarize Attachments" script
    - Monitor the progress of the attachment summary task until the response status is COMPLETE or FAILED.
@@ -136,7 +136,7 @@ C. **Attachment Summarization:**
    - DO NOT use the "Show DocIntel task link to user" tool to retrieve a DocIntel link
    - Display the summary to the user once the task is complete, ensuring clarity and conciseness.
 
-D. **Document Summarization:**
+D. Document Summarization:
    - Use the available record details to start the summarization process.
    - Monitor the progress of the summarization task until it is complete or fails.
 
