@@ -9,12 +9,14 @@
 
 ### Step 1: Go to All > System Definition > Tables
 
-**Screenshot Table Creation 1**
+screenshots/CreateNewTable.png
 
 - Create a new table by clicking “New” (top right corner)
 - Provide the Label, claim intimation case, with this the Name will get auto-populated
 - Extend table to task (not customer service task table), next, we add this to self-service section by add module to Menu (self-serve)
 **Screenshot Table Creation 2**
+
+  
 - Validate by clicking the information button next to extends table [i], it should be the below extended table
 **Screenshot Table Creation Application Creation**
 - Next, Click on the Application Access tab
