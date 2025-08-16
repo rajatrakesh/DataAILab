@@ -149,5 +149,5 @@ General Guidelines:
 
 By following these instructions, you will effectively manage and execute document processing tasks based on user needs, ensuring clarity and efficiency in communication
 
-We will keep the tools and information section as it is, no triggers and make the AI Agent available in NAP.
+We will keep the tools and information section as it is, no triggers and make the AI Agent available.
 
