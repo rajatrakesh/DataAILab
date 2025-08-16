@@ -40,6 +40,8 @@
 
 - Next, Let’s open this table and add the columns we created in the previous step to the selected List
 
+![TableColumns](screenshots/OpenTableCols.png)
+
  ![CreateTableFinal](screenshots/CreateNewTableFinal.png)
 
 - Next, we upload a excel of records, use this excel link
@@ -64,6 +66,6 @@
 
 - Press the attachment icon and attach all the files (File Folder Link). Ensure all files are attached. We will map the fields of the document in Now Assist.
 
-- With this, we now have one sample claim submitted and available for validation.
+ ![CustomRecordAttach](screenshots/CustomeRecordAttach.png)
 
-  **Screenshot Record**
+- With this, we now have one sample claim submitted and available for validation.
