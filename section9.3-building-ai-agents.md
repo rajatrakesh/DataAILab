@@ -1,4 +1,4 @@
-<img width="468" height="480" alt="image" src="https://github.com/user-attachments/assets/3df6a10e-93c7-455b-a537-eaa3eb80cd52" />## Claim Details AI Agent
+## Claim Details AI Agent
 
 This is the first AI Agent that we will be building where we will be leveraging the flow action to read the data from the custom claim intimation table.
 The purpose of building this AI Agent is to extract the data from the claims table and then later use this information for Validation with the documents submitted for validation.
