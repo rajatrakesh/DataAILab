@@ -178,6 +178,7 @@ Integration Extract
 
 Integration Process
 - Condition remains the same, i.e., Number is not empty
+  
 **Screenshot use case integration 2**
 
 **Use Case 3** : Aadhaar Data Extract
@@ -191,6 +192,7 @@ Integration Extract
 
 Integration Process
 - Condition remains the same, i.e., Number is not empty
+  
 **Screenshot use case integration 2**
 
 
