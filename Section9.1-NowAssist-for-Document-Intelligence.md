@@ -191,7 +191,7 @@ Integration Process
 
 ![ExtractIntegration2](screenshots/DocExtractUseCase2IntegrationFinal.png)
 
-**Activate each of these Integration**
+**Critical: Activate each of these Integration**
 
 #### Use Case 3 : PAN Details Extraction
 
@@ -212,7 +212,7 @@ Integration Process
   
 ![UseCase3IntegrationFinal](screenshots/DocExtractUseCase3IntegrationFinal.png)
 
-**Activate each of these Integration**
+**Critical: Activate each of these Integration**
 
 **Use Case 3** : Aadhaar Data Extract
 
@@ -228,7 +228,7 @@ Integration Process
   
 ![UseCase4Integration](screenshots/DocExtractUseCase4IntegrationFinal.png)
 
-**Activate each of these Integration**
+**Critical: Activate each of these Integration**
 
 
 
