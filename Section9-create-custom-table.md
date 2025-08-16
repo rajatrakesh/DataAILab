@@ -9,7 +9,7 @@
 
 ### Step 1: Go to All > System Definition > Tables
 
-screenshots/CreateNewTable.png
+(screenshots/CreateNewTable.png)
 
 - Create a new table by clicking “New” (top right corner)
 - Provide the Label, claim intimation case, with this the Name will get auto-populated
