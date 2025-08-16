@@ -21,11 +21,13 @@ Following are the case details:
 
 You will provide a clear structured output, don't show the JSON output
 
-**Screenshot1**
+![ClaimAgent](screenshots/ClaimDetailAgent.png)
 
 Add tool as part of the AI Agent
 
-**Screenshot2 Tool**
+![ClaimAgentTool](screenshots/ClaimDetailAgentTool.png)
+
+![ClaimAgentTool1](screenshots/ClaimDetailAgentTool1.png)
 
 No Trigger and Make this available in Define Availability
 
@@ -48,7 +50,7 @@ Always assume the record is from `u_claim_intimation_case` Extract field informa
 
 Source documents are stored as file attachments in Glide records (`u_claim_intimation_case`).
 
-**Screenshot3**
+![DuplicateOOTBAgent](screenshots/DocIntelAiAgent.png)
 
 Instruct the AI Agent
 AI Agent Role:
