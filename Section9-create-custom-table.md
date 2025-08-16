@@ -1,4 +1,4 @@
-<img width="468" height="65" alt="image" src="https://github.com/user-attachments/assets/e49a8aec-5159-4695-988e-d0a1d95045c3" />## Pre-requisite before we move on to the Now Assist for Document Intelligence
+## Pre-requisite before we move on to the Now Assist for Document Intelligence
 
 ### In this section of lab, we will building with the following:
 1. Creation of custom table (extension of task table)
