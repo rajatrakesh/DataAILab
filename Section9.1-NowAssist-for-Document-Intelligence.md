@@ -108,13 +108,92 @@ Condition: Find **Number** in drop down - Next drop down, find **is not empty**
 Create Flow (Check Default) - No change
 **Click Save**
 
+### Step6: Open both integrations, one by one, Click Open in Flow Designer and activate them.
+
+**Screenshot Integration Activate**
+
 
 **Why are we doing the Integration** : So far, we have defined the fields that we want to extract, but these fields are not getting updated anywhere, so to get these fields updated to target table (already defined in previous step), we need to create an extract integration and then a process integration. These are nothing but flow designer, flows which take the extracted fields, process them and update the records in target table.
 
-### Step6: Go to Settings, (Gear Icon under Exit)
+### Step7: Go to Settings, (Gear Icon under Exit)
 - Enable the Full automation mode toggle
 
+**Exit**
+
 **Final Integration Screenshot**
+
+### Step8: Test Outputs for the Use Cases
+- Next we will go back to the individual Use Case and test the use case using the record, to validate if our use case and table are correctly integrated and if the use case is able to fetch the attachments from the record.
+
+Go to the use case (Bank Details), and go to the test output tab and click Test and search for the record in Upload from Record (Example: CLI0001004)
+
+**Screenshot Record Test**
+
+The documents available in the record will be loaded and now we validate the fields that we were extracting, in this use cases, it is Bank Name and Bank Account Number.
+Click More > To Review > Validate the fields
+
+And click each extracted value and once you see green check, we go and click confirm and submit.
+
+**Screenshot To Review**
+
+Once we have tested, it we will see the records getting populated in the individual record, check the Bank Name and Bank Account Number field, in the claim intimation case table.
+
+**Screenshot Table**
+
+Next, we Repeat all of the above steps for other documents & fields as well.
+As we know we have total 4 documents for validation and we have created the use case for the first document.
+
+**Use Case 2** : Death Certificate
+
+For Death Certificate we are extracting
+- Name of Deceased
+- Date of Death
+
+Follow the information available in the below field screenshots
+
+**Screenshot use case field 1**
+**Screenshot use case field 2**
+
+Skip test outputs and directly go to integration and create integrations like we did in previous use case
+
+Follow the information available in the below integration screenshots
+
+Integration Extract
+
+**Screenshot use case integration 1**
+
+Integration Process
+- Condition remains the same, i.e., Number is not empty
+**Screenshot use case integration 2**
+
+**Use Case 3** : PAN Details Extraction
+
+For PAN Details Extraction we are extracting
+- PAN Number
+- PAN Name
+
+Integration Extract
+
+**Screenshot use case integration 1**
+
+Integration Process
+- Condition remains the same, i.e., Number is not empty
+**Screenshot use case integration 2**
+
+**Use Case 3** : Aadhaar Data Extract
+
+For Aadhaar Data Extract we are extracting
+- Aadhaar Number
+
+Integration Extract
+
+**Screenshot use case integration 1**
+
+Integration Process
+- Condition remains the same, i.e., Number is not empty
+**Screenshot use case integration 2**
+
+
 
 
 
