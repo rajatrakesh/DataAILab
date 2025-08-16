@@ -10,20 +10,21 @@ Description: This flow action is to read claims intimation case data
 
 Keep Application as Global
 
-**Screenshot Flow Action1**
+![FlowAction](screenshots/FlowActionCreate.png)
 
 Next you provide an Input (Identifier/key for the record of custom table)
 
-**Screenshot Flow Action2**
+![FlowActionInput](screenshots/FlowActionInputs.png)
 
 Now, since we are building it using script in flow action we add script as a step to the action.
 
 Next, we add a number as input variable in the script
 
-**Screenshot Flow Action3**
+![FlowActionScript](screenshots/FlowActionScript.png)
+
+![FlowActionScript1](screenshots/FlowActionScript1.png)
 
 Next, we provide the script to read the custom table
-
 
 (function execute(inputs, outputs) {
   var TABLE = 'u_claim_intimation_case'
@@ -56,16 +57,18 @@ Note: Whenever you’re reading more than one variable from a record, you can cr
 
 Next, we declare the output variable
 
-**Screenshot Flow Action**
+![FlowActionOutput](screenshots/FlowActionOutput.png)
 
 Click Exit Edit Mode
 
 Now, select the individual outputs using pill picker and Save then test.
 
-**Screenshot Flow Action2**
+![FlowActionOutputPick](screenshots/FlowActionOutput1.png)
 
 Before we go-ahead and publish this, let’s test the flow action.
 
-**Screenshot Flow Action3**
+![FlowActionOutputTest](screenshots/FlowActionTest.png)
+
+![FlowActionOutputTest](screenshots/FlowActionTestOutput.png)
 
 With this our test is successful, now we can publish the flow action and we can now use this flow action tool as part of AI Agent.
