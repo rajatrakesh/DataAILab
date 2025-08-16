@@ -214,7 +214,7 @@ Integration Process
 
 **Critical: Activate each of these Integration**
 
-**Use Case 3** : Aadhaar Data Extract
+**Use Case 4** : Aadhaar Data Extract
 
 For Aadhaar Data Extract we are extracting
 - Aadhaar Number
