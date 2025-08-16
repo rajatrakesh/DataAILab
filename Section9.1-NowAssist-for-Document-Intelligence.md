@@ -140,10 +140,10 @@ Once we have tested, it we will see the records getting populated in the individ
 
 **Screenshot Table**
 
-Next, we Repeat all of the above steps for other documents & fields as well.
+### Next, we Repeat all of the above steps for other documents & fields as well.
 As we know we have total 4 documents for validation and we have created the use case for the first document.
 
-**Use Case 2** : Death Certificate
+#### Use Case 2 : Death Certificate
 
 For Death Certificate we are extracting
 - Name of Deceased
@@ -166,7 +166,7 @@ Integration Process
 - Condition remains the same, i.e., Number is not empty
 **Screenshot use case integration 2**
 
-**Use Case 3** : PAN Details Extraction
+#### Use Case 3 : PAN Details Extraction
 
 For PAN Details Extraction we are extracting
 - PAN Number
