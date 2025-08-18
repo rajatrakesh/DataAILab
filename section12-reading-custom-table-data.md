@@ -1,4 +1,4 @@
-## Reading Claim Record using Flow Action
+## Section 12: Reading Claim Record using Flow Action
 
 Go to All > Process Automation - Flow Designer > Click New > Select Action
 
@@ -72,3 +72,7 @@ Before we go-ahead and publish this, let’s test the flow action.
 ![FlowActionOutputTest](screenshots/FlowActionTestOutput.png)
 
 With this our test is successful, now we can publish the flow action and we can now use this flow action tool as part of AI Agent.
+
+**Next Step:** [Section 13 - Reading Data from Custom Table](section12-reading-custom-table-data.md)
+**Previous:** [Section 10 - Create Custom Table](section10-create-custom-table.md)
+**Back to:** [Main README](README.md)

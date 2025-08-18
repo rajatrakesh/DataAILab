@@ -1,4 +1,4 @@
-# Section 9.1: Introduction: Now Assist for Doc Intel
+# Section 11: Introduction: Now Assist for Doc Intel
 Now Assist for Doc Intel allows you review documents for key information and extract document data for use in your workflows.
 
 ## What are we building ?
@@ -230,7 +230,9 @@ Integration Process
 
 **Critical: Activate each of these Integration**
 
-
+**Next Step:** [Section 12 - Reading Data from Custom Table](section12-reading-custom-table-data.md)
+**Previous:** [Section 10 - Create Custom Table](section10-create-custom-table.md)
+**Back to:** [Main README](README.md)
 
 
 
