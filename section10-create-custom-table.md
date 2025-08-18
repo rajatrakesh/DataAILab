@@ -1,4 +1,4 @@
-## Pre-requisite before we move on to the Now Assist for Document Intelligence
+## Section 10 : Pre-requisite before we move on to the Now Assist for Document Intelligence
 
 ### In this section of lab, we will building with the following:
 1. Creation of custom table (extension of task table)
@@ -69,3 +69,7 @@
  ![CustomRecordAttach](screenshots/CustomeRecordAttach.png)
 
 - With this, we now have one sample claim submitted and available for validation.
+
+**Next Step:** [Section 11 - Now Assist for Document Intelligence](section11-nowassist-for-document-intelligence.md)
+**Previous:** [Section 9 - Data Privacy](section9-data-privacy-security.md)
+**Back to:** [Main README](README.md)
