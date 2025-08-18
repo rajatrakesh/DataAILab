@@ -153,3 +153,5 @@ By following these instructions, you will effectively manage and execute documen
 
 We will keep the tools and information section as it is, no triggers and make the AI Agent available.
 
+**Previous:** [Section 12 - Reading Data from Custom Table](section12-reading-custom-table-data.md)
+**Back to:** [Main README](README.md)
