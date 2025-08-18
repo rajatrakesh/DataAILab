@@ -1,5 +1,7 @@
 ## Section 10 : Pre-requisite before we move on to the Now Assist for Document Intelligence
 
+**Estimated time: 10 minutes**
+
 ### In this section of lab, we will building with the following:
 1. Creation of custom table (extension of task table)
 2. Importing records to custom table & attaching pdf

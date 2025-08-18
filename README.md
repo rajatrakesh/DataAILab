@@ -27,9 +27,13 @@ By completing this workshop, you will:
 | [Section 3](section3-design-knowledge-graph.md) | Building Knowledge Graph and AI Agent | 40 minutes |
 | [Section 4](section4-skill-kit.md) | Building Skill Kit with Tools | 40 minutes |
 | [Section 5](section5-virtual-agent-designer.md) | Gen AI Controller Use Case | 20 minutes |
-| [Section 5](section5-building-multiple-agents.md) | Knowledge Q&A in VA and AI Search | 10 minutes |
-| [Section 6](section6-developer-persona.md) | LLM Topic Builder and Virtual Agent  | 10 minutes |
-| [Section 7](section7-skill-kit.md) | Now Assist Skill Kit | 5 minutes |
+| [Section 6](section6-ai-search-stop-words.md) | Stop Words and AI Search Configuration | 10 minutes |
+| [Section 7](section7-genai-controller-configuration.md) | Gen AI Controller Configuration  | 30 minutes |
+| [Section 8](section7-skill-kit-with-open-ai.md) | Skill Kit with OpenAI | 30 minutes |
+| [Section 9](section9-data-privacy-security.md) | Data Privacy and Security | 20 minutes |
+| [Section 10](section10-create-custom-table.md) | Document Intelligence Pre-req setup | 20 minutes |
+| [Section 11](section11-nowassist-for-document-intelligence.md) | Now Assist for Document Intelligence | 20 minutes |
+| [Section 12](section12-nowassist-for-document-intelligence.md) | Now Assist for Document Intelligence | 20 minutes |
 
 ### 📚 Additional Resources
 
