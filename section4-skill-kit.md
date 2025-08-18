@@ -1,4 +1,4 @@
-# Section 5. Now Assist Skill Kit
+# Section 4. Now Assist Skill Kit
 
 **Estimated time: 25 minutes**
 
@@ -498,6 +498,6 @@ Congratulations! You have now created and deployed a custom skill.
 Next Section: [Section 5 - Virtual Agent Designer with LLM](section5-virtual-agent-designer.md)
 
 
-**Next Section:** [Building AI Search and Stop Words](section5-ai-search-stop-words.md)
-**Previous Section:** [Design Knowledge Graph](section3-design-knowledge-graph.md)
+**Next Section:** [Section 5 - Building AI Search and Stop Words](section5-ai-search-stop-words.md)
+**Previous Section:** [Section 3 - Design Knowledge Graph](section3-design-knowledge-graph.md)
 **Back to:** [Main README](README.md)
