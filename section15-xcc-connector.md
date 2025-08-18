@@ -67,20 +67,20 @@ cd ~/Documents
 
 With this we need to provide the following information and location to generate the key
 
-`What is your first and last name?`
-  `[Unknown]:  servicenow.sharepoint.com`
-`What is the name of your organizational unit?`
-  `[Unknown]:  Sales`
-`What is the name of your organization?`
-  `[Unknown]:  ServiceNow`
-`What is the name of your City or Locality?`
-  `[Unknown]:  Bangalore`
-`What is the name of your State or Province?`
-  `[Unknown]:  Karnataka`
-`What is the two-letter country code for this unit?`
-  `[Unknown]:  IN`
-`Is CN=servicenow.sharepoint.com, OU=Sales, O=ServiceNow, L=Bangalore, ST=Karnataka, C=IN correct?`
-  `[no]:  yes`
+```What is your first and last name?
+  [Unknown]:  servicenow.sharepoint.com
+What is the name of your organizational unit?
+  [Unknown]:  Sales
+What is the name of your organization?
+  [Unknown]:  ServiceNow
+What is the name of your City or Locality?
+  [Unknown]:  Bangalore
+What is the name of your State or Province?
+  [Unknown]:  Karnataka
+What is the two-letter country code for this unit?
+  [Unknown]:  IN
+Is CN=servicenow.sharepoint.com, OU=Sales, O=ServiceNow, L=Bangalore, ST=Karnataka, C=IN correct?
+  [no]:  yes```
 
 With this we get a .jks file
 
