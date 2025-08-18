@@ -391,6 +391,6 @@ You have successfully:
 
 ---
 
-**Next Step:** [Section 7 - Gen AI Controller Configuration](section7-genai-controller-config.md)
-**Previous:** [Section 5 - Virtual Agent Designer with LLM](section5-virtual-agent-designer.md)
+**Next Section:** [Gen AI Controller Configuration](section6-genai-controller-config.md)
+**Previous Section:** [Skill Kit](section4-skill-kit.md)
 **Back to:** [Main README](README.md)

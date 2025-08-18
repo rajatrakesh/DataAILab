@@ -72,6 +72,6 @@
 
 - With this, we now have one sample claim submitted and available for validation.
 
-**Next Step:** [Section 11 - Now Assist for Document Intelligence](section11-nowassist-for-document-intelligence.md)
-**Previous:** [Section 9 - Data Privacy](section9-data-privacy-security.md)
+**Next Section:** [Section 11 - Now Assist for Document Intelligence](section11-nowassist-for-document-intelligence.md)
+**Previous Section:** [Section 9 - Data Privacy](section9-data-privacy-security.md)
 **Back to:** [Main README](README.md)

@@ -382,5 +382,6 @@ You have successfully created an intelligent Virtual Agent that:
 
 ---
 
-**Next Step:** [Section 6 - Stop Words and AI Search Configuration](section6-stop-words-ai-search.md)
+**Next Section:** [Section 9 - Data Privacy and Security](section9-data-privacy-security.md)
+**Previous Section:**[Section 7 - Skill Kit with OpenAI](section7-skill-kit-with-open-ai.md)
 **Back to:** [Main README](README.md)

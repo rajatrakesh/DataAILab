@@ -230,8 +230,8 @@ Integration Process
 
 **Critical: Activate each of these Integration**
 
-**Next Step:** [Section 12 - Reading Data from Custom Table](section12-reading-custom-table-data.md)
-**Previous:** [Section 10 - Create Custom Table](section10-create-custom-table.md)
+**Next Section:** [Section 12 - Reading Data from Custom Table](section12-reading-custom-table-data.md)
+**Previous Section:** [Section 10 - Create Custom Table](section10-create-custom-table.md)
 **Back to:** [Main README](README.md)
 
 

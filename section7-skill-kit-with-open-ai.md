@@ -375,6 +375,6 @@ You have successfully:
 
 ---
 
-**Next Step:** [Section 9 - Data Privacy and Security](section9-data-privacy.md)
-**Previous:** [Section 7 - Gen AI Controller Config](section7-genai-controller-config.md)
+**Next Section:** [Virtual Agent Designer with LLM](section8-virtual-agent-designer.md)
+**Previous Section:** [Gen AI Controller Config](section6-genai-controller-config.md)
 **Back to:** [Main README](README.md)

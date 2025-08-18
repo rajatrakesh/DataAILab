@@ -260,5 +260,6 @@ You have successfully configured the Generative AI Controller with OpenAI integr
 
 ---
 
-**Next Step:** [Section 8 - Calling Skill Kit with Open AI](section8-skill-kit-with-open-ai.md)
+**Next Section:** [Skill Kit with OpenAI](section7-skill-kit-with-open-ai.md)
+**Previous Section:** [AI Search and Stop Words](section5-ai-search-stop-words.md)
 **Back to:** [Main README](README.md)

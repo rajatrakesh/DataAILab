@@ -73,6 +73,6 @@ Before we go-ahead and publish this, let’s test the flow action.
 
 With this our test is successful, now we can publish the flow action and we can now use this flow action tool as part of AI Agent.
 
-**Next Step:** [Section 13 - Reading Data from Custom Table](section12-reading-custom-table-data.md)
-**Previous:** [Section 10 - Create Custom Table](section10-create-custom-table.md)
+**Next Section:** [Section 13 - Building Claim AI Agent](section13-building-claim-ai-agent.md)
+**Previous Section:** [Section 11 - Now Assist for Document Intelligence](section11-nowassist-for-document-intelligence.md)
 **Back to:** [Main README](README.md)

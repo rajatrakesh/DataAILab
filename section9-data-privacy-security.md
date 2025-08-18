@@ -442,6 +442,6 @@ You have successfully:
 
 ---
 
-**Next Step:** [Section 10 - Create Custom Table for Document Intelligence](section10-create-custom-table.md)
-**Previous:** [Section 8 - Skill Kit With Open AI Implementation](section8-skill-kit-with-open-ai.md)
+**Next Section:** [Section 10 - Create Custom Table for Document Intelligence](section10-create-custom-table.md)
+**Previous Section:** [Section 8 - Virtual Agent Designer](section8-virtual-agent-designer.md)
 **Back to:** [Main README](README.md)

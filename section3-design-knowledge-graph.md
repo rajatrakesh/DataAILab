@@ -218,7 +218,9 @@ You are an expert in querying ServiceNow knowledge graph for incident data.
 
 >Extra Credit: Additional capability to try out. Optional. 
 
-Next Section: [Build Skill Kit with Tools](section4-skill-kit.md)
+**Next Section:** [Build Skill Kit with Tools](section4-skill-kit.md)
+**Previous Section:** [Building AI Agents](section2-building-agents-simple.md)
+**Back to:** [Main README](README.md)
 
 
 

@@ -145,7 +145,7 @@ var crossAppWorkflow = {
                 type: 'change_required',
 ```
 
-**Previous:** [Section 13 - Building Claim AI Agent](section13-building-claim-ai-agent.md)
+**Previous Section:** [Section 13 - Building Claim AI Agent](section13-building-claim-ai-agent.md)
 **Back to:** [Main README](README.md)
                 
     
