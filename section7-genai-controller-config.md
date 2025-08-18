@@ -1,4 +1,4 @@
-# Section 8.1: Generative AI Controller Configuration
+# Section 7: Generative AI Controller Configuration
 
 **Estimated time: 30 minutes**
 
@@ -260,5 +260,5 @@ You have successfully configured the Generative AI Controller with OpenAI integr
 
 ---
 
-**Next Step:** [Section 8.2 - Virtual Agent Designer with LLM](section8-virtual-agent-designer.md)
+**Next Step:** [Section 8 - Calling Skill Kit with Open AI](section8-skill-kit-with-open-ai.md)
 **Back to:** [Main README](README.md)
