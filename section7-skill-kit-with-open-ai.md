@@ -1,4 +1,4 @@
-# Section 8: Skill Kit Implementation - Incident Summarization with OpenAI
+# Section 7: Skill Kit Implementation - Incident Summarization with OpenAI
 
 **Estimated time: 30 minutes**
 
@@ -375,6 +375,6 @@ You have successfully:
 
 ---
 
-**Next Section:** [Virtual Agent Designer with LLM](section8-virtual-agent-designer.md)
-**Previous Section:** [Gen AI Controller Config](section6-genai-controller-config.md)
+**Next Section:** [Section 8 - Virtual Agent Designer with LLM](section8-virtual-agent-designer.md)
+**Previous Section:** [Section 6 - Gen AI Controller Config](section6-genai-controller-config.md)
 **Back to:** [Main README](README.md)

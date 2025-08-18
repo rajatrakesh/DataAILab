@@ -1,4 +1,4 @@
-# Section 5: Virtual Agent Designer with LLM
+# Section 8: Virtual Agent Designer with LLM
 
 **Estimated time: 45 minutes**
 

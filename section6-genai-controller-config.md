@@ -1,4 +1,4 @@
-# Section 7: Generative AI Controller Configuration
+# Section 6: Generative AI Controller Configuration
 
 **Estimated time: 30 minutes**
 
@@ -260,6 +260,6 @@ You have successfully configured the Generative AI Controller with OpenAI integr
 
 ---
 
-**Next Section:** [Skill Kit with OpenAI](section7-skill-kit-with-open-ai.md)
-**Previous Section:** [AI Search and Stop Words](section5-ai-search-stop-words.md)
+**Next Section:** [Section 7 - Skill Kit with OpenAI](section7-skill-kit-with-open-ai.md)
+**Previous Section:** [Section 5 - AI Search and Stop Words](section5-ai-search-stop-words.md)
 **Back to:** [Main README](README.md)

@@ -391,6 +391,6 @@ You have successfully:
 
 ---
 
-**Next Section:** [Gen AI Controller Configuration](section6-genai-controller-config.md)
-**Previous Section:** [Skill Kit](section4-skill-kit.md)
+**Next Section:** [Section 6 - Gen AI Controller Configuration](section6-genai-controller-config.md)
+**Previous Section:** [Section 4 - Skill Kit](section4-skill-kit.md)
 **Back to:** [Main README](README.md)
