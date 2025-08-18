@@ -53,10 +53,6 @@ In this lab, we will be enabling three capabilities:
 
 4. **Open the record** for detailed configuration
 
-5. **Edit the record** to enable both:
-   - **Default** checkbox ✓
-   - **Active** checkbox ✓
-
 ![Default and Active Settings](screenshots/image4.png)
 
 ![Capability Configuration](screenshots/image5.png)
@@ -69,7 +65,18 @@ In this lab, we will be enabling three capabilities:
 ![Generic Prompt Setup](screenshots/image6.png)
 
 **Configure Generic Prompt:**
+
 ![Generic Prompt Details](screenshots/image7.png)
+
+> **Important:** Only one capability can have "Default" set to true at a time.
+
+Changing the existing capability to false
+
+![Generic Prompt Details](screenshots/image7.1.png)
+
+Changing the openai GPT4 to true
+
+![Generic Prompt Details](screenshots/image7.2.png)
 
 Set the capability as **Default** and **Active** for Generic Prompt functionality.
 
@@ -162,9 +169,7 @@ Because we want to use Virtual Agent Designer, we need to activate the `sys_one_
 
 ![Add New Capability](screenshots/image20.png)
 
-![Capability Selection](screenshots/image21.png)
-
-![Capability Configuration](screenshots/image22.png)
+![Capability Configuration](screenshots/image19.png)
 
 ## Configuration Tables Reference
 
