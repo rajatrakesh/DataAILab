@@ -1,4 +1,4 @@
-# Section 8.6: Advanced Features and Integration
+# Section 14: Advanced Features and Integration
 
 **Estimated time: 15 minutes**
 
@@ -13,7 +13,7 @@ This section covers advanced AI features available in ServiceNow, including Docu
 - **Advanced Analytics:** AI-powered insights and reporting
 - **Integration Patterns:** Best practices for scaling AI across the organization
 
-## Section 8.6.1: Document Q&A Implementation
+## Section 14.1: Document Q&A Implementation
 
 ### Overview of Document Q&A
 
@@ -121,11 +121,12 @@ function secureDocumentQuery(query, user) {
 - **Feedback Mechanism:** Allow users to report inaccuracies
 - **Human Oversight:** Escalation path for critical decisions
 
-## Section 8.6.2: Advanced Integration Patterns
+## Section 14.2: Advanced Integration Patterns
 
 ### Multi-Application AI Workflows
 
 **Cross-Application Data Flow:**
+
 ```javascript
 // Integrated AI workflow across applications
 var crossAppWorkflow = {
@@ -142,3 +143,9 @@ var crossAppWorkflow = {
             var changeRequest = suggestChangeRequest(incident, summary);
             return {
                 type: 'change_required',
+```
+
+**Previous:** [Section 13 - Building Claim AI Agent](section13-building-claim-ai-agent.md)
+**Back to:** [Main README](README.md)
+                
+    
