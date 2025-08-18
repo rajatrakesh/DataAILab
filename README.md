@@ -39,6 +39,17 @@ By completing this workshop, you will:
 
 ### 📚 Additional Resources
 
+#### Pre-Reading Material 
+
+- [Gen AI Controller](https://servicenow.sharepoint.com/sites/PlatformEnablement/SitePages/Generative-AI-Controller-FAQ.aspx?csf=1&web=1&e=54Uc8d&CID=0e880fea-6825-4c4e-a852-5614db031661)
+- [Virtual Agent Designer](https://www.servicenow.com/docs/csh?topicname=conversation-designer-virtual-agent.html&version=latest)
+- [Stop Words](https://www.servicenow.com/docs/csh?topicname=stop-words-ais.html&version=latest)
+- [Now Assist in AI Search](https://www.servicenow.com/docs/bundle/zurich-platform-administration/page/administer/ai-search/reference/now-assist-ais.html)
+- [Now Assist Skill Kit](https://www.servicenow.com/docs/csh?topicname=exploring-now-assist-skill-kit.html&version=latest)
+- [Data Privacy](https://www.servicenow.com/docs/bundle/zurich-platform-security/page/administer/security/concept/explore-now-assist-data-privacy.html)
+
+#### Appendix
+
 - [Appendix A1: Now Creator Sample Prompts](appendix-a1-sample-prompts.md)
 - [Appendix A2: Agent Ideas](appendix-a2-agent-ideas.md)
 - [Appendix A3: AI Search Set-Up](appendix-a3-ai-search-setup.md)
