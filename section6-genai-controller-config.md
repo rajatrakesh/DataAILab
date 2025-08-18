@@ -47,15 +47,21 @@ In this lab, we will be enabling three capabilities:
 
 3. Open the record for **Sentiment GPT4 (OpenAI Chat Completion)**
 
-![Sentiment GPT4 Configuration](screenshots/image3.png)
+![Sentiment GPT4 Configuration](screenshots/SAnalysis.png)
 
 > **Important:** Only one capability can have "Default" set to true at a time.
 
 4. **Open the record** for detailed configuration
 
-![Default and Active Settings](screenshots/image4.png)
+![Default and Active Settings](screenshots/Senti.png)
 
-![Capability Configuration](screenshots/image5.png)
+![Capability Configuration](screenshots/SentimentGPT.png)
+
+![Capability Configuration](screenshots/Sentiment2.png)
+
+> **Important:** Only one capability can have "Default" set to true at a time.
+
+![Capability Configuration](screenshots/Sentiment3.png)
 
 ## Step 3: Configure Generic Prompt Capability
 
@@ -70,13 +76,15 @@ In this lab, we will be enabling three capabilities:
 
 > **Important:** Only one capability can have "Default" set to true at a time.
 
+![Generic Prompt Details](screenshots/GenericPrompt.png)
+
 Changing the existing capability to false
 
-![Generic Prompt Details](screenshots/image7.1.png)
+![Generic Prompt Details](screenshots/GenericPrompt1.png)
 
 Changing the openai GPT4 to true
 
-![Generic Prompt Details](screenshots/image7.2.png)
+![Generic Prompt Details](screenshots/GenericPrompt2.png)
 
 Set the capability as **Default** and **Active** for Generic Prompt functionality.
 
@@ -85,15 +93,15 @@ Set the capability as **Default** and **Active** for Generic Prompt functionalit
 7. Configure the **Summarization** capability following the same pattern
 
 **Summarization Setup:**
-![Summarization Setup](screenshots/image8.png)
-
-![Summarization Details](screenshots/image9.png)
+![Summarization Setup](screenshots/Summarize.png)
 
 ![Summarization Active](screenshots/image10.png)
 
-![Summarization Final](screenshots/image11.png)
+> **Important:** Only one capability can have "Default" set to true at a time.
 
-![Summarization Complete](screenshots/image12.png)
+![Summarization Details](screenshots/Summarize1.png)
+
+![Summarization Final](screenshots/Summarize2.png)
 
 ## Step 5: Configure OpenAI Connection and Credentials
 
