@@ -495,17 +495,6 @@ Review the output from your custom skill in the description field of the feedbac
 
 Congratulations! You have now created and deployed a custom skill.
 
-## Next Steps After the Lab
-
-1. **Explore the Community:** Browse available skills and use cases
-2. **Plan Your Implementation:** Identify specific organizational needs
-3. **Start Small:** Begin with simple, high-impact use cases
-4. **Collaborate:** Engage with the community for support and ideas
-5. **Scale Gradually:** Expand successful implementations across teams
+Next Section: [Section 5 - Virtual Agent Designer with LLM](section5-virtual-agent-designer.md)
 
 
-**Additional Resources:**
-- [Appendix A1: Now Creator Sample Prompts](appendix-a1-sample-prompts.md)
-- [Appendix A2: Agent Ideas](appendix-a2-agent-ideas.md)
-- [Appendix A3: AI Search Set-Up](appendix-a3-ai-search-setup.md)
-- [Appendix A4: Application Scope](appendix-a4-application-scope.md)

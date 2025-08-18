@@ -1,4 +1,4 @@
-# Section 8.2: Virtual Agent Designer with LLM
+# Section 5: Virtual Agent Designer with LLM
 
 **Estimated time: 45 minutes**
 
@@ -382,6 +382,5 @@ You have successfully created an intelligent Virtual Agent that:
 
 ---
 
-**Next Step:** [Section 8.3 - Stop Words and AI Search Configuration](section8-stop-words-ai-search.md)
-**Previous:** [Section 8.1 - Generative AI Controller Configuration](section8-genai-controller.md)
+**Next Step:** [Section 6 - Stop Words and AI Search Configuration](section6-stop-words-ai-search.md)
 **Back to:** [Main README](README.md)
