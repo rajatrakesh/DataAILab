@@ -1,4 +1,4 @@
-# Section 6: Stop Words and AI Search Configuration
+# Section 5: Stop Words and AI Search Configuration
 
 **Estimated time: 25 minutes**
 
@@ -27,7 +27,7 @@ Stop words help improve search relevance by:
 - Existing search profiles configured
 - Understanding of your organization's search requirements
 
-## Section 6.1: Creating Stop Words Dictionary
+## Section 5.1: Creating Stop Words Dictionary
 
 ### Step 1: Navigate to Dictionary Management
 
@@ -115,7 +115,7 @@ question
    - Verify status changes to "Published"
    - Confirm no validation errors
 
-## Section 6.2: Configure Search Profile
+## Section 5.2: Configure Search Profile
 
 ### Step 1: Access Search Profiles
 
@@ -150,7 +150,7 @@ question
    - Profile status: Active ✓
    - No validation errors ✓
 
-## Section 6.3: Troubleshooting Dictionary Issues
+## Section 5.3: Troubleshooting Dictionary Issues
 
 ### Common Issue: Publishing Error
 
@@ -200,7 +200,7 @@ To prevent future orphaned records:
 - Validate configurations before publishing
 - Regular maintenance of search profile associations
 
-## Section 6.4: AI Search Configuration and Optimization
+## Section 5.4: AI Search Configuration and Optimization
 
 ### Step 1: Configure AI Search Settings
 
@@ -237,7 +237,7 @@ To prevent future orphaned records:
 - **FAQ Content:** Frequently asked questions
 - **Custom Documentation:** Organization-specific content
 
-## Section 6.5: Testing Stop Words Implementation
+## Section 5.5: Testing Stop Words Implementation
 
 ### Before Stop Words Implementation
 
@@ -265,7 +265,7 @@ Test the same search with stop words active:
 - **Speed:** Faster search processing
 - **User Satisfaction:** More useful search experience
 
-## Section 6.6: Best Practices for Stop Words
+## Section 5.6: Best Practices for Stop Words
 
 ### Domain-Specific Considerations
 
@@ -310,7 +310,7 @@ customer, client, user, caller, contact, person, individual
 - Search analytics review
 - Content source evaluation
 
-## Section 6.7: Advanced Dictionary Configuration
+## Section 5.7: Advanced Dictionary Configuration
 
 ### Multiple Dictionary Types
 

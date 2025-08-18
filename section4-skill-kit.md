@@ -495,8 +495,6 @@ Review the output from your custom skill in the description field of the feedbac
 
 Congratulations! You have now created and deployed a custom skill.
 
-Next Section: [Section 5 - Virtual Agent Designer with LLM](section5-virtual-agent-designer.md)
-
 
 **Next Section:** [Section 5 - Building AI Search and Stop Words](section5-ai-search-stop-words.md)
 **Previous Section:** [Section 3 - Design Knowledge Graph](section3-design-knowledge-graph.md)
