@@ -1,4 +1,4 @@
-# Section 8.5: Data Privacy and Security
+# Section 9: Data Privacy and Security
 
 **Estimated time: 20 minutes**
 
@@ -21,7 +21,7 @@ When integrating ServiceNow with external LLMs like OpenAI, data privacy and sec
 - Completed previous sections with AI integrations active
 - Access to install and configure Data Privacy applications
 
-## Section 8.5.1: Sensitive Data Handling Configuration
+## Section 9.1: Sensitive Data Handling Configuration
 
 ### Understanding Data Flow
 
@@ -64,7 +64,7 @@ var emailMaskingRule = {
 };
 ```
 
-## Section 8.5.2: GenAI Logging and Monitoring
+## Section 9.2: GenAI Logging and Monitoring
 
 ### Access GenAI Logs
 
@@ -135,7 +135,7 @@ function checkForSensitiveData(logEntry) {
 - Data privacy compliance metrics
 - Error rate analysis
 
-## Section 8.5.3: Required Data Privacy Applications
+## Section 9.3: Required Data Privacy Applications
 
 ### Install Data Privacy Framework
 
@@ -178,7 +178,7 @@ Before deploying AI features, conduct a Privacy Impact Assessment (PIA):
 5. **Third-Party Sharing:** What data goes to external LLMs?
 6. **User Rights:** How can users control their data?
 
-## Section 8.5.4: Compliance and Regulatory Considerations
+## Section 9.4: Compliance and Regulatory Considerations
 
 ### GDPR Compliance
 
@@ -213,7 +213,7 @@ Before deploying AI features, conduct a Privacy Impact Assessment (PIA):
 - Enhanced security controls
 - Specific data residency requirements
 
-## Section 8.5.5: Best Practices for Secure AI Implementation
+## Section 9.5: Best Practices for Secure AI Implementation
 
 ### Data Preparation
 
@@ -297,7 +297,7 @@ var apiSecurityConfig = {
 };
 ```
 
-## Section 8.5.6: Document Q&A Security Considerations
+## Section 9.6: Document Q&A Security Considerations
 
 ### Document Processing Security
 
@@ -331,7 +331,7 @@ When implementing Document Q&A capabilities:
 5. **Response:** Filter and validate AI-generated responses
 6. **Retention:** Apply retention policies to processed documents
 
-## Section 8.5.7: Incident Response for AI Security
+## Section 9.7: Incident Response for AI Security
 
 ### Security Incident Categories
 
@@ -442,6 +442,6 @@ You have successfully:
 
 ---
 
-**Next Step:** [Section 8.6 - Advanced Features and Integration](section8-advanced-features.md)
-**Previous:** [Section 8.4 - Skill Kit Implementation](section8-skill-kit.md)
+**Next Step:** [Section 10 - Create Custom Table for Document Intelligence](section10-create-custom-table.md)
+**Previous:** [Section 8 - Skill Kit With Open AI Implementation](section8-skill-kit-with-open-ai.md)
 **Back to:** [Main README](README.md)
