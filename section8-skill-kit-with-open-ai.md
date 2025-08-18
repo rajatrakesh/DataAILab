@@ -375,6 +375,6 @@ You have successfully:
 
 ---
 
-**Next Step:** [Section 8.5 - Data Privacy and Security](section8-data-privacy.md)
-**Previous:** [Section 8.3 - Stop Words and AI Search Configuration](section8-stop-words-ai-search.md)
+**Next Step:** [Section 9 - Data Privacy and Security](section9-data-privacy.md)
+**Previous:** [Section 7 - Gen AI Controller Config](section7-genai-controller-config.md)
 **Back to:** [Main README](README.md)
