@@ -1,4 +1,4 @@
-# Section 9.1: Create a Knowledge Graph
+# Section 3: Create a Knowledge Graph
 
 **Estimated time: 20 minutes**
 

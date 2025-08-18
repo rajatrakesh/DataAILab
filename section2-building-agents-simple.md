@@ -273,4 +273,4 @@ You have successfully:
 
 **Next Section:** [Building Knowledge Graph and AI Agents](section3-design-knowledge-graph.md)
 **Previous Section:**[Section 1 - Start Using Gen AI](section1-start-using-genai.md)
-**Back to:**[Read Me](README.md)
+**Back to:**[Main README](README.md)
