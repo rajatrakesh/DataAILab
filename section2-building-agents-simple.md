@@ -271,4 +271,4 @@ You have successfully:
 
 ---
 
-**Next Step:** [Section 3 - Now Assist for the Agent Persona](section3-agent-persona.md)
+**Next Step:** [Building Knowledge Graph and AI Agents](section3-design-knowledge-graph.md)
