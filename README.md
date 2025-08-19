@@ -37,6 +37,7 @@ By completing this workshop, you will:
 | [Section 13](section13-builing-claim-ai-agent.md) | Building Claim AI Agent | 20 minutes |
 | [Section 14](section14-advanced-features.md) | Advanced Features | 20 minutes |
 
+
 ### 📚 Additional Resources
 
 #### Pre-Reading Material 
