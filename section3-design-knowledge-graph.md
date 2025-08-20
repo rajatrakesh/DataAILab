@@ -115,7 +115,7 @@ Now all our table are connected.
 2. The first query that we will test is: 
 
 ```
-Which city does Alex Scollan` live in?
+Which city does Alex Scollan live in?
 ```
 
 > If you are using a different table or a different user, ensure that you have checked the `sys_user` table, for a valid record. 
