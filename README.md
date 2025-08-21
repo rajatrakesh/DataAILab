@@ -1,8 +1,8 @@
-# Data and AI Workshop
+# Data and AI Bootcamp
 
-## ServiceNow Workshop Lab Guide - Yokohama Release P5
+## Lab Guide
 
-Welcome to the ServiceNow Data and AI hands-on lab guide will give you practical experience with ServiceNow's Generative AI assistant, Now Assist, and AI Agents.
+Welcome to the ServiceNow Data and AI hands-on lab guide will give you practical experience with ServiceNow's Generative AI assistant, Now Assist, and AI Agents, that you can **leverage for Demos & POVs.**
 
 ### 🎯 Lab Objectives
 
@@ -13,11 +13,11 @@ By completing this workshop, you will:
 
 ### 📋 Prerequisites
 
-- Access to a ServiceNow instance with AI Search enabled
+- Access to a ServiceNow demohub instance with Now Assist and AI Search enabled
 - Admin privileges for configuration
 - Basic familiarity with ServiceNow platform
 
-### 🗂️ Workshop Structure
+### 🗂️ Bootcamp Structure
 
 | Section | Topic | Estimated Time |
 |---------|-------|----------------|
