@@ -40,7 +40,6 @@ By completing this workshop, you will:
 | **University**
 | [Section 12](section12-reading-custom-table-data.md) | Reading Data from Custom Table | 20 minutes |
 | [Section 13](section13-building-claim-ai-agent.md) | Building Claim AI Agent | 20 minutes |
-| **Phd**
 | [Section 14](section14-advanced-features.md) | Advanced Features | 20 minutes |
 | [Section 15](section15-xcc-connector.md) | Building XCC Connector | 20 minutes |
 
