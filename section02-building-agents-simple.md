@@ -1,4 +1,4 @@
-# Section 2. Building Agents and Use Cases
+# Section 02. Building Agents and Use Cases
 
 **Estimated time: 40 minutes**
 
