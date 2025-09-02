@@ -91,9 +91,27 @@ Document Extraction use cases:
 Especially cases, where the attachment is part of a record (either custom attachment table or the sys_attachment table) and the extracted fields get updated as part of a target table.
 
 ## Pre-requisites for Now Assist for Doc Intel
+- Custom Table Creation (Extension of Incident task table)
+- Incident creation
+- Document Extraction Skill Activation
+
+# Let's Get Started!
+
+## 1) Create a custom table that extends Incident Task
+Why: We want a place to capture extracted fields per artifact, without polluting the base Incident table.
+
+In your demohub instance, go to All - Search `System Definition` > Table
 
 ![ITxNA4DI](screenshots/Table1.png)
+
+Once you're in the Tables, click the `New` button from top right corner
+
 ![ITxNA4DI](screenshots/Table2.png)
+
+Provide the `Label`, in this case we are calling it `Incident Error`, with this the `Name` value automatically gets created, `u_incident_error`
+We are creating a extended table of Incident tasks, In the `Extends` Search for Incident Task and select from the drop down.
+Since this is extended table of Incident task, we don't want to create a new module, however we want to make sure it is available in existing module, so we will go to `Add Module to menu` and search for `self-serve`
+
 ![ITxNA4DI](screenshots/Table3.png)
 ![ITxNA4DI](screenshots/Table4.png)
 ![ITxNA4DI](screenshots/Table5.png)
