@@ -74,21 +74,6 @@ Document Extraction use cases:
 
 Especially cases, where the attachment is part of a record (either custom attachment table or the sys_attachment table) and the extracted fields get updated as part of a target table.
 
-## What roles do I need to build Now Assist for Doc Intel Use cases?
-- DocIntel Admin
-- DocIntel Manager
-- DocIntel Extraction Agent
-
-## What plugins do I need to activate Now Assist for Doc Intel?
-- Now Assist
-- Document Intelligence
-- Now Assist for Document Intelligence
-- Now Assist Platform
-
-## Building of Now Assist for Doc Intel Use Cases
-Document Extraction use cases:
-- Use cases where we must extract defined field of information from a document, the format of the document can be pdf, jpg, png.
-Especially cases, where the attachment is part of a record (either custom attachment table or the sys_attachment table) and the extracted fields get updated as part of a target table.
 
 ## Pre-requisites for Now Assist for Doc Intel
 - Custom Table Creation (Extension of Incident task table)
