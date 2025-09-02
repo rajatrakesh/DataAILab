@@ -97,8 +97,8 @@ Especially cases, where the attachment is part of a record (either custom attach
 
 # Let's Get Started!
 
-## 1) Create a custom table that extends Incident Task
-Why: We want a place to capture extracted fields per artifact, without polluting the base Incident table.
+## Part 1 - Create a custom table that extends Incident Task
+Purpose/Why: We want a place to capture extracted fields per artifact, without polluting the base Incident table.
 
 In your demohub instance, go to All - Search `System Definition` > Table
 
@@ -110,37 +110,124 @@ Once you're in the Tables, click the `New` button from top right corner
 
 Provide the `Label`, in this case we are calling it `Incident Error`, with this the `Name` value automatically gets created, `u_incident_error`
 We are creating a extended table of Incident tasks, In the `Extends` Search for Incident Task and select from the drop down.
-Since this is extended table of Incident task, we don't want to create a new module, however we want to make sure it is available in existing module, so we will go to `Add Module to menu` and search for `self-serve`
+Since this is extended table of `Incident task`, we don't want to create a new module, however we want to make sure it is available in existing module, so we will go to `Add Module to menu` and search for `self-serve`
+Next we go to `Controls` Tab
 
 ![ITxNA4DI](screenshots/Table3.png)
+
+On the same table creation page, In the `Controls` tab, we check `Auto-Number`
+Next, we will provide `Prefix`, which in this case will be `INCE`
+`Number` will be `1000`
+'Number of Digits` we will keep as `6`
+
+Note, this is customizable, you have your own structure of `Auto-Number`
+
+Next, we will move on to `Application Access` for manage access controls
+
 ![ITxNA4DI](screenshots/Table4.png)
+
+As part of `Application Access` tab, we will check the following
+`Can Create`
+`Can Read`
+`Can Update`
+
+Click `Submit`
+
+✅ With this, we have completed creation of custom extended table for incident task!
+
 ![ITxNA4DI](screenshots/Table5.png)
+
 ![ITxNA4DI](screenshots/Table6.png)
+
+Now we have the custom table available as part of the `Tables`
+We will search for the table and configure the columns required for the use case.
+
 ![ITxNA4DI](screenshots/Table7.png)
+
+In the table, go to the `Columns` Tab, Insert new columns, by clicking the `Insert new row` at the bottom
+Where we provide the `Label`, `Name` and `Type` of the column.
+
+✅ Great! we now have completed the column creation as part of the custom table.
+
 ![ITxNA4DI](screenshots/TableCol1.png)
+
+Next, we go to the `Incident Error` table, Click `New` on the top right corner.
+
 ![ITxNA4DI](screenshots/TableCol2.png)
+
+In a the same window, we will have a `New Record` creation for `Incident Error`
+As part of the `New Record`, you will be able to see the `Number` being Auto-generated, this is based on the configuration we created as part of the table creation.
+
 ![ITxNA4DI](screenshots/TableIncident1.png)
+
+Next Click on the `Attachment` icon on top right corner.
+
 ![ITxNA4DI](screenshots/TableIncident2.png)
+
+You will see `Attachments` window come up, Click Choose file.
+
 ![ITxNA4DI](screenshots/TableIncident3.png)
+
+Select the `error` screenshot present as part of the exercise.
+
+![ITxNA4DI](screenshots/error.png)
+
 ![ITxNA4DI](screenshots/TableIncident4.png)
+
+With this the error screenshot is now part of the new `Incident Error` record.
+Provide a `Short Description`, and Click `Submit`
+
 ![ITxNA4DI](screenshots/TableIncident5.png)
+
+✅ Well Done! We now have completed the pre-requisite for the Now Assist for Document Intelligence
+
 ![ITxNA4DI](screenshots/TableIncident6.png)
+
+## Part 2 – Activating and Configuring the Document Extraction Use Case
+Why/Purpose: To automate the capture of critical information from error images, we will configure Document Intelligence to identify and extract key fields. The extracted values will then be automatically mapped and populated into the custom table columns, reducing manual data entry and ensuring accuracy in incident task management.
+
+To begin, we go to the Admin > Now Assist Admin
+
 ![ITxNA4DI](screenshots/NADI1.png)
+
+As part of Now Assist Admin, we go to `Now Assist Skills`
+
 ![ITxNA4DI](screenshots/NADI2.png)
+
+In Now Assist Skill, from the left pane, select `Platform`
+
 ![ITxNA4DI](screenshots/NADI3.png)
+
+As part of Now Assist Skill for Platform, in the top right, Search for `Document`
+You will find two skills:
+1. Document Extraction
+2. Document Q&A
+
+As part of today's exercise, we will `Activate` Document Extraction Skill.
+
 ![ITxNA4DI](screenshots/NADI4.png)
+
+Once you `Activate` Document Extraction Skill, we will create use case by clicking `New use case`
+
 ![ITxNA4DI](screenshots/NADI5.png)
+
+To create a new use case, we start by defining the use case
+Provide the following details:
+1. Use Case Name
+2. Target Table
+3. 
+
 ![ITxNA4DI](screenshots/NADIUseCase1.png)
-![ITxNA4DI](screenshots/NADIUseCase1.png)
-![ITxNA4DI](screenshots/NADIUseCase1.png)
-![ITxNA4DI](screenshots/NADIUseCase1.png)
-![ITxNA4DI](screenshots/NADIUseCase1.png)
-![ITxNA4DI](screenshots/NADIUseCase1.png)
-![ITxNA4DI](screenshots/NADIUseCase1.png)
-![ITxNA4DI](screenshots/NADIUseCase1.png)
-![ITxNA4DI](screenshots/NADIUseCase1.png)
-![ITxNA4DI](screenshots/NADIUseCase1.png)
-![ITxNA4DI](screenshots/NADIUseCase1.png)
+![ITxNA4DI](screenshots/NADIUseCase2.png)
+![ITxNA4DI](screenshots/NADIUseCase3.png)
+![ITxNA4DI](screenshots/NADIUseCase4.png)
+![ITxNA4DI](screenshots/NADIUseCase5.png)
+![ITxNA4DI](screenshots/NADIUseCase6.png)
+![ITxNA4DI](screenshots/NADIUseCase7.png)
+![ITxNA4DI](screenshots/NADIUseCase8.png)
+![ITxNA4DI](screenshots/NADIUseCase9.png)
+![ITxNA4DI](screenshots/NADIUseCase10.png)
+![ITxNA4DI](screenshots/NADIUseCase11.png)
 ![ITxNA4DI](screenshots/NADIUseCaseAutofillComplete.png)
 ![ITxNA4DI](screenshots/NADIUseCaseComplete.png)
 ![ITxNA4DI](screenshots/NADIUseCaseFA.png)
