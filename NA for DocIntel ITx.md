@@ -8,7 +8,7 @@ We are building an **intelligent incident enrichment solution** within **Service
 The solution demonstrates how AI can **read, understand, and extract structured information from unstructured attachments** (e.g., screenshots, PDFs, images) added to incidents using Now Assist for Document Intelligence.
 
 The lab is designed to enable you with the following:
-1. Creation of custom table (extension of task table)
+1. Creation of custom table (extension of incidnet task table)
 2. Building Document Extraction use cases
 3. Using the Document extraction use cases in the custom OOTB Document & Visual Insights AI Agents
 
