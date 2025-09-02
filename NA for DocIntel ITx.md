@@ -211,35 +211,186 @@ Once you `Activate` Document Extraction Skill, we will create use case by clicki
 
 ![ITxNA4DI](screenshots/NADI5.png)
 
+## Step 1: Define Use Case
+
 To create a new use case, we start by defining the use case
 Provide the following details:
 1. Use Case Name
 2. Target Table
-3. 
 
 ![ITxNA4DI](screenshots/NADIUseCase1.png)
+
+As part of today's workshop, let's provide the follow details to the fields
+
+1. Use Case Name: `Incident Code`
+2. Target Table: `Incident Error` - This you will select from the drop down list.
+
 ![ITxNA4DI](screenshots/NADIUseCase2.png)
+
+## Step 2: Define Fields
+
+Next, we will define the fields for the `Incident Code` use case
+
+Name: `give name of the field`
+Details: Details field is critical as it used to help the LLM, find the correct data from the document, write the information about the field that we are extracting such that it helps explain the field information. Also provide an example if possible.
+Field: `Text` (Default)
+Target Field: `search the target field based from the columns of the target table` (If we search, we will see the options)
+
+Most critical information, that you need focus on is the `Details` part. This field is essential to find the field from the document.
+
+*Field 1*
+
+Field name: `application name`
+Details: `This is the impacted application name, for which we are getting the error`
+Target field: `u_application_name`
+Field Type: `Text`
+Check `Single field is required for extraction`
+
 ![ITxNA4DI](screenshots/NADIUseCase3.png)
+
+*Field 2*
+
+Field name: `error code`
+Details: `this is a numeric code for the error given by the application`
+Target field: `u_error_code`
+Field Type: `Text`
+Check `Single field is required for extraction`
+
 ![ITxNA4DI](screenshots/NADIUseCase4.png)
+
+*Field 3*
+
+Field name: `timestamp`
+Details: `This is the timestamp of error occurance`
+Target field: `u_error_code`
+Field Type: `Text`
+Check `Single field is required for extraction`
+
 ![ITxNA4DI](screenshots/NADIUseCase5.png)
+
+With this we now have created all three fields for the use case
+
 ![ITxNA4DI](screenshots/NADIUseCase6.png)
+
+## Step 3: Test Output
+
+Click, `Test a new document` button
+
+To test the fields extraction, we will use the `Incident error` table record that we created
+For the testing, Let's select `Upload from record` and search the number `INCE001002`
+
+Next, let's link the record.
+
 ![ITxNA4DI](screenshots/NADIUseCase7.png)
+
+Once, the record gets linked, the use case starts looking for the attachment in the record.
+It prepares the document and refect the same on the screen.
+### Note: Sometimes it may take longer to process the document, to valide click `refresh`button on the right pane.
+
 ![ITxNA4DI](screenshots/NADIUseCase8.png)
+
+Once the document is processed, you will see the extracted fields from the document.
+In this case, it will be application name, error code, and timestamp.
+Before we submit the test results, we need to review the extracted values.
+Go to More > Click `To review`
+Individually click on each field value, this will complete the review of each field extracted value and there will be no more fields in the `To review` section.
+
 ![ITxNA4DI](screenshots/NADIUseCase9.png)
+
 ![ITxNA4DI](screenshots/NADIUseCase10.png)
+
+Once completed, in the top right corner, select `submit`.
+In the pop-up, select `Confirm and Submit`
+
 ![ITxNA4DI](screenshots/NADIUseCase11.png)
-![ITxNA4DI](screenshots/NADIUseCaseAutofillComplete.png)
-![ITxNA4DI](screenshots/NADIUseCaseComplete.png)
-![ITxNA4DI](screenshots/NADIUseCaseFA.png)
+
+## Step 4: Add Integrations
+
+Next we move on to creation of integration with the custom table
+In this step, we will integrate what we have done so far to extract the values then process them and eventually update the custom table record with the individual field values.
+
+Click the `Add Integration` button.
+
+Provide the following details:
+1. Integration Name : `IncidentErrorExtract`
+2. What type of Integration you want to set? : `Extract Values` (Select from drop down)
+
+Click `Save`
+
 ![ITxNA4DI](screenshots/NADIUseCaseIntegrate1.png)
+
+Now Let's add the second integration to process the values extracted.
+
+Click the `Add Integration` button.
+
+Provide the following details:
+1. Integration Name : `IncidentErrorProcess`
+2. What type of Integration you want to set? : `Process task` (Select from drop down)
+
 ![ITxNA4DI](screenshots/NADIUseCaseIntegrate2.png)
+
+As part of process task, we need to provide the condition as well.
+
+From the first drop down, select `Number`
+
 ![ITxNA4DI](screenshots/NADIUseCaseIntegrate3.png)
+
+From the second drop down, select `is not empty`
+
+### Essential Qn: Why are we doing this?
+- We are doing this to make sure that the incident record is properly defined to make sure that it exists before it go ahead and update the columns.
+
 ![ITxNA4DI](screenshots/NADIUseCaseIntegrate4.png)
+
+With this we now have both the integrations available in the use case.
+
 ![ITxNA4DI](screenshots/NADIUseCaseIntegrate5.png)
-![ITxNA4DI](screenshots/NADIUseCaseIntegrate6.png)
+
+These integrations are nothing but flows that we have created automatically without going to `Flow Designer`
+### One critical thing to Note: We need to activate these integrations in the flow designer.
+
+Open `IncidentErrorExtract` integration, click `Open in Flow Designer` button.
+
 ![ITxNA4DI](screenshots/NADIUseCaseIntegrate7.png)
+
+In the flow designer, activate the flow by clicking `Activate` top right corner.
+
 ![ITxNA4DI](screenshots/NADIUseCaseIntegrate8.png)
+
+Confirm Activate
+
 ![ITxNA4DI](screenshots/NADIUseCaseIntegrate9.png)
+
+Similarly, for the process integration, Open `IncidentErrorProcess` integration, click `Open in Flow Designer` button.
+
 ![ITxNA4DI](screenshots/NADIUseCaseIntegrate10.png)
+
+In the flow designer, activate the flow by clicking `Activate` top right corner.
+
 ![ITxNA4DI](screenshots/NADIUseCaseIntegrate11.png)
+
+Confirm Activate
+
 ![ITxNA4DI](screenshots/NADIUseCaseIntegrate12.png)
+
+Go back to the Integration tab, click the gear icon for Settings
+
+![ITxNA4DI](screenshots/NADIUseCaseIntegrate5.png)
+
+We now need to activate the full extraction mode, by enabling the toggle. Check out the screenshot below!
+
+### Purpose/Why? : Full Automation mode, helps the AI Agent to extracts the fields and process without actually reviewing the field information, like we did in Step 3
+
+![ITxNA4DI](screenshots/NADIUseCaseFA.png)
+
+## Last step: Review and Activate
+
+![ITxNA4DI](screenshots/NADIUseCaseComplete.png)
+
+✅ Well Done! We have completed the use case creation.
+
+Now let's re-run the test output step, to validate if the extraction and process for auto-fill in the incident works
+
+Once you're done, you will see the the incident record with the below values!
+
+![ITxNA4DI](screenshots/NADIUseCaseAutofillComplete.png)
