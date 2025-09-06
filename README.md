@@ -35,13 +35,11 @@ By completing this workshop, you will:
 | [Section 8](section8-virtual-agent-designer.md) | Virtual Agent Designer with LLM | 30 minutes |
 | [Section 9](section9-data-privacy-security.md) | Data Privacy and Security | 20 minutes |
 | **Junior College**
-| [Section 10](section10-create-custom-table.md) | Document Intelligence Pre-req setup | 45 minutes |
-| [Section 11](section11-nowassist-for-document-intelligence.md) | Now Assist for Document Intelligence | 30 minutes |
+| [Section 10](section10-nowassist-for-DocIntel-Doc-Extraction.md) | Now Assist for Document Intelligence | 40 minutes |
+| [Section 11](section11-building-incident-error-extract-ai-agent.md) | Now Assist for Document Intelligence | 20 minutes |
 | **University**
-| [Section 12](section12-reading-custom-table-data.md) | Reading Data from Custom Table | 20 minutes |
-| [Section 13](section13-building-claim-ai-agent.md) | Building Claim AI Agent | 20 minutes |
-| [Section 14](section14-advanced-features.md) | Advanced Features | 20 minutes |
-| [Section 15](section15-xcc-connector.md) | Building XCC Connector | 20 minutes |
+| [Section 12](section12-advanced-features.md) | Advanced Features | 20 minutes |
+| [Section 13](section13-xcc-connector.md) | Building XCC Connector | 20 minutes |
 
 ### 📚 Additional Resources
 
