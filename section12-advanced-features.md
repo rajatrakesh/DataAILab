@@ -1,4 +1,4 @@
-# Section 14: Advanced Features and Integration
+# Section 12: Advanced Features and Integration
 
 **Estimated time: 15 minutes**
 
@@ -144,8 +144,8 @@ var crossAppWorkflow = {
             return {
                 type: 'change_required',
 ```
-
-**Previous Section:** [Section 13 - Building Claim AI Agent](section13-building-claim-ai-agent.md)
+**Next Section:** [Section 13 - xcc-connector](section13-xcc-connector.md)
+**Previous Section:** [Section 11 - Building-incident-error-extract-ai-agent](section11-building-incident-error-extract-ai-agent.md)
 **Back to:** [Main README](README.md)
                 
     

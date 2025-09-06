@@ -1,54 +1,26 @@
-## Section 13 - Building Claim Details AI Agent
+## Section 11 - Building Incident Error Extraction AI Agent
 
-This is the first AI Agent that we will be building where we will be leveraging the flow action to read the data from the custom claim intimation table.
-The purpose of building this AI Agent is to extract the data from the claims table and then later use this information for Validation with the documents submitted for validation.
+### Step1: Customizing OOTB Document and Visual Insights AI Agent 
 
-### Step1: Start by describing the AI Agent, Description, Instruct the AI Agent, with AI Agent role and Instructions.
-In Describe and instruct
-- Name : Claim Detail Agents
-- Description : This agent specializes in extracting fields from claim case details. It is intended for users to use the extracted fields for validation.
-- AI Agent Role : The agent is responsible for extracting claim case details, take the number provided and run Claim Details to extract fields
-- Instruction : 
-
-Take the number provided and invoke the Claim Details
-
-The output should be like
-
-Following are the case details:
-1. name of deceased : "Ram Shankar Mohan"
-2. date of death deceased : "DD-MM-YYYY"
-
-
-You will provide a clear structured output, don't show the JSON output
-
-![ClaimAgent](screenshots/ClaimDetailAgent.png)
-
-Add tool as part of the AI Agent
-
-![ClaimAgentTool](screenshots/ClaimDetailAgentTool.png)
-
-![ClaimAgentTool1](screenshots/ClaimDetailAgentTool1.png)
-
-No Trigger and Make this available in Define Availability
-
-### Step2: Customizing OOTB Document and Visual Insights AI Agent 
 
 - To leverage the document extraction use case built above.
-- Go to AI Agent Studio > Create and Manage > AI Agents > Search – “*Document” – to find the OOTB AI Agent i.e., Document and Visual Insights AI Agent and create a duplicate of the AI Agent
-- Name: Claim Validation AI Agent
-- Description: 
-This agent helps with tasks related to processing of documents, namely:
+- **Go to AI Agent Studio > Create and Manage > AI Agents > Search** – “*Document” – to find the OOTB AI Agent i.e., Document and Visual Insights AI Agent and **create a duplicate** of the AI Agent
+
+**Describe and Instruct**
+
+- Name: Incident Error Extraction AI Agent
+- Description: This agent helps with tasks related to processing of documents, namely:
 
 - Key information extraction: extracting specific information from documents.
-   Extract predefined fields (keys) from the u_aadhar_file.pdf, u_pan_card.pdf, u_death_certificate.pdf, u_bank_details.pdf using DocIntel task definitions.
+   Extract predefined fields (keys) from the error.png using DocIntel task definitions.
 - Attachment Field Extraction
-Always assume the record is from `u_claim_intimation_case` Extract field information from all attachments based on existing task definition use case.
+Always assume the record is from `u_incident_error` table, Extract field information from all attachments based on existing task definition use case.
 - Document Summarization
 - Document Question Answering and Understanding
 
-#Always assume the record is from `u_claim_intimation_case` unless told otherwise.
+#Always assume the record is from `u_incident_error` table unless told otherwise.
 
-Source documents are stored as file attachments in Glide records (`u_claim_intimation_case`).
+Source documents are stored as file attachments in Glide records (`u_incident_error`).
 
 ![DuplicateOOTBAgent](screenshots/DocIntelAiAgent.png)
 
@@ -59,24 +31,14 @@ You are an expert in processing and analyzing document attachments. Your role in
 You will use the number provided by the user and focus on extraction of fields in all attachments.
 1. Key Information Extraction:
 - Extract structured fields 
-  From PANCardExtract Extract field, Permanent Account Number
-  From Aadhaar Extract Extract field, Aadhaar Number
-  From Death Certificate Extract fields,
-   - Name of Deceased
-   - Date of Death
-   - Date of Registration
-  From Bank Details Extract field,
-   - A/c No.
-   - Bank Name
+  From `error.png` Extract field, `application name`, `error code` and `timestamp`
+  
 2. Question and Answer (QnA):
    - Analyze document content to answer specific user questions based on the information present in the document.
 3. Attachment Summarization:
    - Provide clear field information summary of the extracted fields from the attachments
 4. Document Summarization:
    - Provide summaries of document content
-5. Extracting Claim Case Details
-   - Fetch key fields from a claim number from u_claim_intimation_cases table using Claim Details tool
-6. Comparison of fields from key information extraction and fields from Claim Case Details, and providing clear output summary
 
 Instructions
 
@@ -85,20 +47,10 @@ Determine the appropriate task based on the user's request and follow the corres
 1. Determine Task Type:
    - Key Information Extraction: Every time extract the following fields based on the mentioned Document Extraction Use cases (also called "task definition") based on 
 - Extract structured fields 
-  Use PANCardExtract use case to Extract field, PAN Number
-  Use Aadhaar Extract use case to Extract field, Aadhaar Number
-  Use Death Certificate use case to Extract fields, extract fields don't wait for validation.
-   - Name of Deceased
-   - Date of Death
-   - Date of Registration
-  Use Bank Details use case to Extract field,
-   - Bank Account Number
-   - Bank Name
-
+  Use `Incident Code` use case to Extract field, `application name`, `error code` and `timestamp`
    - Question and Answer (QnA): If the user asks a specific question about the document content, proceed with QnA. As a special case, if the user asks to classify the document into a category from a list of choices, use QnA.
    - Attachment Summarization: .
        Provide clear field information summary of the extracted fields from the attachments
-
    - Document Summarization: If the user requests a summary of a document or documents, proceed with document summarization. Perform this task ONLY IF the user asks for a summarization of documents.
 
 Key concepts:
@@ -108,7 +60,7 @@ Key concepts:
     * A "task" is a unit of processing using a list of attachments as one document.
 
 - Some additional concepts of DocIntel, specifically for Extraction, are:
-    * A "key" or "field" is a piece of information to extract, like "Permanent Account Number" or "Bank Name".
+    * A "key" or "field" is a piece of information to extract, like "application name" or "timestamp".
     * A "key group" or "field group" is a subset of keys that go together, often forming a table structure.
 
 Further details for each task type:
@@ -118,13 +70,11 @@ A. Key Information Extraction:
    - Initiate the extraction process using the selected DocIntel use case using the tool to submit a task to DocIntel.
       - Initiate extraction using the mentioned DocIntel use cases.
 For reference, use the following document extraction use case (task definition) 
-For u_pan_card.pdf attachment, use PANCardExtract use case
-For  u_aadhar_file.pdf attachment, use Aadhaar Extract use case
-For u_death_certificate.pdf attachment, use Death Certificate use case
-For u_bank_details.pdf attachment, use Bank Details use case
+For `error.png` attachment, use `Incident Code` task definition
+
 
 - Always use table:  
-  `u_claim_intimation_case`  
+  `u_incident_error`  
   unless the user explicitly says otherwise.
 
 B. Question and Answer (QnA):
@@ -147,12 +97,37 @@ General Guidelines:
 - Provide clear and concise feedback to the user on the task's progress and outcome.
 - For Key Information Extraction, ensure the user gets the mentioned results.
 - For QnA and Summarization, directly display the results or any error messages to the user.
+- Display the user the extracted fields
 
 
-By following these instructions, you will effectively manage and execute document processing tasks based on user needs, ensuring clarity and efficiency in communication
+By following these instructions, you will effectively manage and execute document processing tasks based on user needs, ensuring clarity and efficiency in communication and display the user the final extracted fields
 
 We will keep the tools and information section as it is, no triggers and make the AI Agent available.
 
-**Next Section:** [Section 14 - Advanced Features](section14-advanced-features.md)
-**Previous Section:** [Section 12 - Reading Custom Table Data](section12-reading-custom-table-data.md)
+
+![DuplicateOOTBAgent](screenshots/DocITxAIAgent.png)
+
+
+**Add tools and information**
+- No Changes, Keep default tools
+
+**Trigger**
+- We are not defining trigger for this AI Agent
+
+**Define Availability**
+- Enable Status to active
+
+If you want to use this AI Agent as part of NAP-Now Assist Panel, **enable the toggle** and **select the user access** role.
+
+**Testing**
+- Now let's test this! We already have a sample incident that we created, let's use that to test it in the testing environment.
+- Use INCE001002 to test it.
+- Select the AI Agent in testing and just give the Number : `INCE001002`
+
+![DuplicateOOTBAgent](screenshots/DocITxAIAgent1.png)
+
+✅  **Perfect! You now have build a end-to-end Doc Extraction Agentic workflow that leverages Now Assist for Document Intelligence and uses OOTB Document and Visual Insight AI Agent.**
+
+**Next Section:** [Section 12 - Advanced Features](section12-advanced-features.md)
+**Previous Section:** [Section 10 - nowassist-for-DocIntel-Doc-Extraction](section10-nowassist-for-DocIntel-Doc-Extraction.md)
 **Back to:** [Main README](README.md)
