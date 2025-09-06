@@ -1,4 +1,4 @@
-# Now Assist for Document Intelligence
+## Section10: Now Assist for Document Intelligence
 Now Assist for Doc Intel allows you review documents for key information and extract document data for use in your workflows.
 
 ## 📑 Use Case: Now Assist for Document Intelligence in ITSM
