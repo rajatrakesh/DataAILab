@@ -145,7 +145,7 @@ var crossAppWorkflow = {
                 type: 'change_required',
 ```
 **Next Section:** [Section 13 - xcc-connector](section13-xcc-connector.md)
-**Previous Section:** [Section 11 - Building-claim-ai-agent](section11-building-claim-ai-agent.md)
+**Previous Section:** [Section 11 - Building-incident-error-extract-ai-agent](section11-building-incident-error-extract-ai-agent.md)
 **Back to:** [Main README](README.md)
                 
     
