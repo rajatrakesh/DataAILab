@@ -1,7 +1,7 @@
 # Now Assist for Document Intelligence
 Now Assist for Doc Intel allows you review documents for key information and extract document data for use in your workflows.
 
-# 📑 Use Case: Now Assist for Document Intelligence in ITSM
+## 📑 Use Case: Now Assist for Document Intelligence in ITSM
 
 ## 1. What We Are Building
 We are building an **intelligent incident enrichment solution** within **ServiceNow ITSM** that leverages **Now Assist for Document Intelligence**.  
