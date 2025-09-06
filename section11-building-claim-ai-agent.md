@@ -128,6 +128,6 @@ If you want to use this AI Agent as part of NAP-Now Assist Panel, **enable the t
 
 ✅  **Perfect! You now have build a end-to-end Doc Extraction Agentic workflow that leverages Now Assist for Document Intelligence and uses OOTB Document and Visual Insight AI Agent.**
 
-**Next Section:** [Section 14 - Advanced Features](section14-advanced-features.md)
-**Previous Section:** [Section 12 - Reading Custom Table Data](section12-reading-custom-table-data.md)
+**Next Section:** [Section 12 - Advanced Features](section12-advanced-features.md)
+**Previous Section:** [Section 10 - nowassist-for-DocIntel-Doc-Extraction](section10-nowassist-for-DocIntel-Doc-Extraction.md)
 **Back to:** [Main README](README.md)
