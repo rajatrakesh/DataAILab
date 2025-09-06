@@ -35,8 +35,8 @@ By completing this workshop, you will:
 | [Section 8](section8-virtual-agent-designer.md) | Virtual Agent Designer with LLM | 30 minutes |
 | [Section 9](section9-data-privacy-security.md) | Data Privacy and Security | 20 minutes |
 | **Junior College**
-| [Section 10](section10-nowassist-for-DocIntel-Doc-Extraction.md) | Now Assist for Document Intelligence | 40 minutes |
-| [Section 11](section11-building-incident-error-extract-ai-agent.md) | Now Assist for Document Intelligence | 20 minutes |
+| [Section 10](section10-nowassist-for-DocIntel-Doc-Extraction.md) | Now Assist for DocIntel Document Extraction | 40 minutes |
+| [Section 11](section11-building-incident-error-extract-ai-agent.md) | Building Doc Intel AI Agent | 20 minutes |
 | **University**
 | [Section 12](section12-advanced-features.md) | Advanced Features | 20 minutes |
 | [Section 13](section13-xcc-connector.md) | Building XCC Connector | 20 minutes |
