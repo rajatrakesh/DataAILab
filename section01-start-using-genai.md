@@ -18,18 +18,16 @@ Now Assist was designed so customers could launch quickly and with minimal lift.
 
 ### Step 2: Enable Now Assist for Virtual Agent
 
-1. Click on **Now Assist Features > Platform > View details** on the Conversational Experience card
+1. Go to **All > Conversational Interface > Home**, This will take you to Conversational Interfaces, where we can configure Now Assist Virtual Agents or Topics
 
-![Now Assist Features Platform](screenshots/now-assist-platform-features.png)
+![Now Assist Features Platform](screenshots/NAVA1.png)
 
-> **Note:** The card pictured might be in a different position on your screen.
 
-2. Click on **Set up Now Assist in Virtual Agent**
+2. Click on **Assistants Tab**, You will be able to see the Default **"Now Assist for Virtual Agent(default)"**
 
-![Now Assist Features Platform](screenshots/now-assist-conversational-experience.png)
+![Now Assist Features Platform](screenshots/NAVA3.png)
 
-3. This will open a new tab; close the intro splash screen
-4. Click on **Now Assist in Virtual Agent (default)**
+3. Click on **Now Assist in Virtual Agent (default)**
 
 ![Now Assist Features Platform](screenshots/now-assist-assistants.png)
 
