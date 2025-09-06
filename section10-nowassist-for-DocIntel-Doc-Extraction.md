@@ -381,6 +381,6 @@ Once you're done, you will see the the incident record with the below values!
 ![ITxNA4DI](screenshots/NADIUseCaseAutofillComplete.png)
 
 
-**Next Section:** [Section 12 - Reading Data from Custom Table](section12-reading-custom-table-data.md)
-**Previous Section:** [Section 10 - Create Custom Table](section10-create-custom-table.md)
+**Next Section:** [Section 11-building-claim-ai-agent](section11-building-claim-ai-agent.md)
+**Previous Section:** [Section 10 nowassist-for-DocIntel-Doc-Extraction](section10-nowassist-for-DocIntel-Doc-Extraction.md)
 **Back to:** [Main README](README.md)
