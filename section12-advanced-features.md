@@ -1,4 +1,4 @@
-# Section 14: Advanced Features and Integration
+# Section 12: Advanced Features and Integration
 
 **Estimated time: 15 minutes**
 
