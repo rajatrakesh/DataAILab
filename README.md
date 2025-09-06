@@ -23,17 +23,17 @@ By completing this workshop, you will:
 |---------|-------|----------------|
 | **Kinddie**
 | [Lab Configuration](lab-configuration.md) | Initial setup and verification | 5 minutes |
-| [Section 1](section1-start-using-genai.md) | Start using Gen AI on Day 1 | 5 minutes |
-| [Section 2](section2-building-agents-simple.md) | Building AI Agents and Use Cases | 20 minutes |
-| [Section 3](section3-design-knowledge-graph.md) | Building Knowledge Graph and AI Agent | 30 minutes |
-| [Section 4](section4-skill-kit.md) | Building Skill Kit with Tools | 30 minutes |
+| [Section 1](section01-start-using-genai.md) | Start using Gen AI on Day 1 | 5 minutes |
+| [Section 2](section02-building-agents-simple.md) | Building AI Agents and Use Cases | 20 minutes |
+| [Section 3](section03-design-knowledge-graph.md) | Building Knowledge Graph and AI Agent | 30 minutes |
+| [Section 4](section04-skill-kit.md) | Building Skill Kit with Tools | 30 minutes |
 | **Primary**
-| [Section 5](section5-ai-search-stop-words.md) | Stop Words and AI Search Configuration | 20 minutes |
-| [Section 6](section6-genai-controller-config.md) | Gen AI Controller Configuration | 20 minutes |
-| [Section 7](section7-skill-kit-with-open-ai.md) | Skill Kit with OpenAI  | 20 minutes |
+| [Section 5](section05-ai-search-stop-words.md) | Stop Words and AI Search Configuration | 20 minutes |
+| [Section 6](section06-genai-controller-config.md) | Gen AI Controller Configuration | 20 minutes |
+| [Section 7](section07-skill-kit-with-open-ai.md) | Skill Kit with OpenAI  | 20 minutes |
 | **High School**
-| [Section 8](section8-virtual-agent-designer.md) | Virtual Agent Designer with LLM | 30 minutes |
-| [Section 9](section9-data-privacy-security.md) | Data Privacy and Security | 20 minutes |
+| [Section 8](section08-virtual-agent-designer.md) | Virtual Agent Designer with LLM | 30 minutes |
+| [Section 9](section09-data-privacy-security.md) | Data Privacy and Security | 20 minutes |
 | **Junior College**
 | [Section 10](section10-nowassist-for-DocIntel-Doc-Extraction.md) | Now Assist for DocIntel Document Extraction | 40 minutes |
 | [Section 11](section11-building-incident-error-extract-ai-agent.md) | Building Doc Intel AI Agent | 20 minutes |
