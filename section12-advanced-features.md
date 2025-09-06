@@ -144,7 +144,7 @@ var crossAppWorkflow = {
             return {
                 type: 'change_required',
 ```
-**Next Section:** [Section 12 - Advanced-features](section12-advanced-features.md)
+**Next Section:** [Section 13 - xcc-connector](section13-xcc-connector.md)
 **Previous Section:** [Section 11 - Building-claim-ai-agent](section11-building-claim-ai-agent.md)
 **Back to:** [Main README](README.md)
                 
