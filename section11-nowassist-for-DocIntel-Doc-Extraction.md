@@ -379,3 +379,8 @@ Now let's re-run the test output step, to validate if the extraction and process
 Once you're done, you will see the the incident record with the below values!
 
 ![ITxNA4DI](screenshots/NADIUseCaseAutofillComplete.png)
+
+
+**Next Section:** [Section 12 - Reading Data from Custom Table](section12-reading-custom-table-data.md)
+**Previous Section:** [Section 10 - Create Custom Table](section10-create-custom-table.md)
+**Back to:** [Main README](README.md)
