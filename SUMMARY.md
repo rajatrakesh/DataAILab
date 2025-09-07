@@ -12,7 +12,7 @@
 * [Section 07: Skill Kit Implementation - Incident Summarization with OpenAI](section07-skill-kit-with-open-ai.md)
 * [Section 08: Virtual Agent Designer with LLM](section08-virtual-agent-designer.md)
 * [Section 09: Data Privacy and Security](section09-data-privacy-security.md)
-* [section10-nowassist-for-DocIntel-Doc-Extraction](section10-nowassist-for-DocIntel-Doc-Extraction.md)
+* [Section 10: Now Assist for Document Intelligence](section10-nowassist-for-DocIntel-Doc-Extraction.md)
 * [Section 11 - Building Incident Error Extraction AI Agent](section11-building-incident-error-extract-ai-agent.md)
 * [Section 12: Advanced Features and Integration](section12-advanced-features.md)
 * [Building XCC Connector for Sharepoint](section13-xcc-connector.md)
