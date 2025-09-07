@@ -1,4 +1,4 @@
-# Section 6: Generative AI Controller Configuration
+# Section 06: Generative AI Controller Configuration
 
 **Estimated time: 30 minutes**
 

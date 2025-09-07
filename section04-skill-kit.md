@@ -1,4 +1,4 @@
-# Section 4. Now Assist Skill Kit
+# Section 04: Now Assist Skill Kit
 
 **Estimated time: 25 minutes**
 

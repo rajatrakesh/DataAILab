@@ -1,4 +1,4 @@
-# Section 01. Start using Gen AI on Day 1
+# Section 01: Start using Gen AI on Day 1
 
 **Estimated time: 5 minutes**
 

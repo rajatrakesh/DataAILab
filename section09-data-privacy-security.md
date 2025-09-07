@@ -1,4 +1,4 @@
-# Section 9: Data Privacy and Security
+# Section 09: Data Privacy and Security
 
 **Estimated time: 20 minutes**
 

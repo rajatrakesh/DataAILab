@@ -1,4 +1,4 @@
-# Section 7: Skill Kit Implementation - Incident Summarization with OpenAI
+# Section 07: Skill Kit Implementation - Incident Summarization with OpenAI
 
 **Estimated time: 30 minutes**
 

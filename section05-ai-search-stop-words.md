@@ -1,4 +1,4 @@
-# Section 5: Stop Words and AI Search Configuration
+# Section 05: Stop Words and AI Search Configuration
 
 **Estimated time: 25 minutes**
 
