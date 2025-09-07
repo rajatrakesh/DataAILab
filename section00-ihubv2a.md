@@ -11,7 +11,7 @@ You will explore **two different approaches (forks):**
 - **Fork 1 – Persisted Data:** Create a custom table, ingest API data on a schedule using **IntegrationHub**, and then expose it to an **AI Agent**. This simulates a real ITSM scenario with reporting and history.  
 - **Fork 2 – Live Query:** Call the API directly at runtime without storing results. This is faster to set up and useful when data doesn’t need to be persisted.  
 
-Choose one fork to complete, or complete both to understand the trade-offs.
+You can choose one fork to complete, or complete both to understand the trade-offs.
 
 ---
 
@@ -207,6 +207,96 @@ Navigate to **System Definition > Tables** and create a new table:
 
 ![Ihub Create Table](screenshots/ihub2-table.png)
 
+Now let's create a flow to persist this data into the table that we created in the above step. 
+
+**Open Workflow Studio** and create a new **Flow**. 
+
+Give it a name `Save API Data to Table`.
+
+First thing that we need to do is add a trigger. We will add the trigger to run just once. 
+
+![Ihub Flow Trigger](screenshots/ihub2-flow-trigger.png)
+
+> This step isn't applicable, but to create a flow, a trigger is required. 
+
+In the next step, we would connect to the REST Service and get the data. Click **Action** to then add the **Action** that we had created earlier. 
+
+![Ihub Flow Create](screenshots/ihub2-flow-create-action.png)
+
+Let's provide a set of test values, to test the action, as follows:
+	- **device**: `PRN-7F3`
+	- **limit**: `3`
+
+![Ihub Input Rest values](screenshots/ihub2-flow-rest-values.png)
+
+Next step, let's add a **For each loop** to iterate through the values, that we would save to the table created previously. 
+
+Add a **Flow Logic** and choose the **For Each**. 
+
+![Ihub For Each](screenshots/ihub2-flow-for-each.png)
+
+Drag the `Device Issues` array object into the Flow loop. 
+
+![Ihub For Each](screenshots/ihub2-flow-for-each-values.png)
+
+Once the for each loop is created, now we need to need an **Action** to **Create Record** into the table. 
+
+Then choose all columns from the table `u_ext_device_issues` that you need to save values into. In the data fields, drag the respective fields from the right panel, under `Object` - > `issues_object`. 
+
+![Ihub - Create Record](screenshots/ihub2-create-record.png)
+
+The above step will insert all values into the table. As a last *Optional* step, we will add a **Lookup Records** action to validate that the records have been committed to the table. 
+
+Add the **Lookup Records** action, and add the table `u_ext_device_issues` and select a criteria `ext_id` as `is not empty`
+
+![Ihub - Lookup Records](screenshots/ihub2-lookup-records.png)
+
+Finally, let's **Test** the complete flow. The results should look something like this: 
+
+![Ihub - Test Flow](screenshots/ihub2-test-flow.png)
+
+Click the successful test to check individual values. 
+
+![Ihub - Test Flow](screenshots/ihub2-test-flow-1.png)
+
+![Ihub - Test Flow](screenshots/ihub2-test-flow-2.png)
+
+![Ihub - Test Flow](screenshots/ihub2-test-flow-3.png)
+
+>The count would be displayed as `3` in the test if you have run this flow the first time. With every subsequent flow, this value will increment with 3 (using the same input parameters)
+
 --------
 
 ## Step: Let's build an AI Agent to call this API 
+
+In addition to persisting these values into the table, the **Action** that we created earlier, could also be leveraged in an AI Agent. 
+
+Create an AI Agent and setup the following values: 
+
+**Name**: `ITSM Device Issues Agent`
+**Description**: `This AI Agent is designed to assist users to find past and current issues with devices. It can query and find out what recent issues have been reported for a specific device or type of devices. The purpose of this agent is to then provide a summary of all issues.`
+**AI Agent Role**:`This agent queries recent incidents or issues that have been reported for a particular device, or type of devices. It will provide various information to the user, based on the input from the user on the type of device.`
+**Instructions**:`1. Ask user for which device they would like to monitor. If no device name is given, it means the response will be broader across different devices. 
+2. If a limit has been provided, then it will limit the output to that number. 
+3. An array will be returned, that may have 1 or multiple issues. 
+3. Organises the output and presents it to the user in a human readable format.`
+
+![Ihub - AI Agent](screenshots/ihub2-ai-agent-1.png)
+
+Next, let's add a **Flow Action** tool, to the AI Agent:
+
+**Name**:`Query Recent Issues Encountered`
+**Description**: `Retrieve recent issues that have been reported for a particular device`
+**Select flow action**:`Get ITSM Device Info from API`
+
+![Ihub - AI Agent](screenshots/ihub2-ai-agent-2.png)
+
+Let's execute this agent with the prompt `Find the past 3 issues encountered by device PRN-7F3`
+
+![Ihub - AI Agent](screenshots/ihub2-ai-agent-execution.png)
+
+------
+
+This completes the lab for **Integration Hub**. 
+
+**Next Step:** [Section 1 - Start using Gen AI on Day 1](section1-start-using-genai.md)

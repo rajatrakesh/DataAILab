@@ -96,4 +96,5 @@ You have successfully activated Now Assist and reviewed the Admin Console!
 ---
 
 **Next Step:** [Section 2 - Building Agents and Use Cases](section2-building-agents-simple.md)
+**Previous Step** [Section 0 - Integration Hub](section00-ihubv2a.md)
 **Back to:** [Main README](README.md)
