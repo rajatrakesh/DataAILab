@@ -43,8 +43,10 @@ In this particular use case, we will create a Child Incident Summarization Skill
 4. **Name**: `ChildIncidentSummarizer`
 
 5. Ensure that the **Active** checkbox is enabled. 
+   Rest of the config remain same, i.e., Application: Global, Accessible from: "This application scope only"
+   Keep the toggle On for "Turn on ECMAScript 2021 (ES12) mode"
 
-6. Put in the following code in the Script:
+7. Put in the following code in the Script:
 
 ```
 var ChildIncidentSummarizer = Class.create();
@@ -134,23 +136,25 @@ There are 6 options to choose from: Flow Action, Retreiver, Script, Skill, Sub F
 
 19. Click **Choose existing script**, and then select the **Resource** as the script that we created in the very first step. The name of the Script we creaated was `ChildIncidentSummarizer`. After selecting this Script, another field will pop up for **Script Function**. Select the function from the drop down, that we created in our script `getChildData`.
 
-20. In the **Inc** field, type `{{incident.sys_id}} in the **Value**. 
+![Script Tool](screenshots/NASK.png)
 
-![Script Tool](screenshots/sk-add-tool-script.png)
+20. Click **Continue**.
 
-21. Click **Next**. 
+21. In the **Inc** field, type `{{incident.sys_id}} in the **Value**. 
 
-22. In the next screen, keep the defaults, and click **Next**. 
+ ![Script Tool](screenshots/NASK1.png)
 
-![Tool Output](screenshots/sk-tool-output.png)
+22. In the next screen, keep the defaults, and click **Continue**.
 
-23. In the next screen, keep default options and click **Next**. 
+![Tool Output](screenshots/NASK2.png)
 
-![Tool Condition](screenshots/sk-tool-condition.png)
+23. In the next screen, keep default options and click **Continue**. 
+
+![Tool Condition](screenshots/NASK3.png)
 
 24. In the confirmation window, check that all inputs are correct and then click **Add Tool**. 
 
-![Tool Confirmation](screenshots/sk-add-tool-confirm.png).
+![Tool Confirmation](screenshots/NASK4.png).
 
 The tool will show up on the canvas. 
 

@@ -442,6 +442,6 @@ You have successfully:
 
 ---
 
-**Next Section:** [Section 10 - Create Custom Table for Document Intelligence](section10-create-custom-table.md)
+**Next Section:** [Section 10 - nowassist-for-DocIntel-Doc-Extraction](section10-nowassist-for-DocIntel-Doc-Extraction.md)
 **Previous Section:** [Section 8 - Virtual Agent Designer](section8-virtual-agent-designer.md)
 **Back to:** [Main README](README.md)

@@ -45,6 +45,12 @@ You are a hospital concierge whose job is to provide directions to specific depa
 5. Next is the **"Add tools and information"** section
 6. We are not adding tools for this agent, so simply click **"Save and continue"**
 
+### Step 5: Define Trigger
+For this exercise, we are not adding trigger, however trigger helps in AI Agent execution independently based on the trigger criteria.
+A trigger criteria can be a case/incident/custom-number created/updated or both, it could also be scheduled, it could also be an inbound email as well.
+
+To understand more by, **"Click Add trigger"**
+
 ### Step 5: Define Availability
 
 7. In **Define availability**, make sure the status is toggled to **On**
@@ -117,7 +123,9 @@ Create the following tools by selecting the **Add tool** option:
 
 7. Click **Add**
 
-#### Tool 2: Update Additional Comments
+#### Tool 2: Update Additional Comments 
+# Redundant - We can remove this
+
 8. Create the next tool by selecting **Add tool** again:
 - **Select:** Flow Action
 - **Name:** `Update additional comments in incident record`
@@ -126,6 +134,7 @@ Create the following tools by selecting the **Add tool** option:
 - **Execution mode:** Autonomous
 - **Display output:** Yes
 - **Output transformation strategy:** Concise
+
 
 9. Click **Add**
 
@@ -207,6 +216,10 @@ Create the following tools by selecting the **Add tool** option:
 
 13. Click **Save and Continue**
 14. On the **Define Availability** page, make sure the **Status** toggle is set to **On**
+
+Also, here you can define whether you would like to access the AI Agent as part of NAP-Now Assist Panel and Virtual Agent.
+This can be enabled the individual toggles
+
 15. Click **Save and Test**
 
 ### Step 5: Test the Agent
