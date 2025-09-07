@@ -26,7 +26,7 @@ Before starting this section, please ensure you have:
 
 ---
 
-## Step 1: Review the API
+## Review the API
 
 The mock service is hosted online and returns JSON data about device issues.
 
@@ -44,9 +44,143 @@ The mock service is hosted online and returns JSON data about device issues.
 
 ---
 
-# Fork 1: Persisted Data (Custom Table + Flow)
+## Build the Flow in Flow Designer
 
-## Step 2A: Create a Custom Table
+<!-- 1. Go to **Workflow Studio > New Flow**.  
+//   - Name: `Fetch Device Issues`  
+ //  ![Ihub New Flow](screenshots/ihub2-flow-new.png)
+   
+2. **Trigger**:  
+   - Type: Scheduled  
+   - Frequency: every 10 minutes  
+   ![Ihub Trigger](screenshots/ihub2-trigger.png) 
+   
+3. **Step 1: HTTP Request**  
+   - Method: GET  
+   - URL: `https://<your-worker>.workers.dev/issues?limit=10`  
+   - Headers: `Accept: application/json`  
+   ![Ihub HTTP Step](screenshots/ihub-http.png) -->
+   
+1. Go to **Workflow Studio**
+
+2. Click **New** > **Spoke**
+   
+	![iHub New Spoke](screenshots/ihub2-new-spoke.png)
+
+3. Give is a **Name** : `ITSM Rest API Spoke` and **Description**: `Spoke for REST API Call` and click **Continue**.
+
+	![iHub Spoke Description](screenshots/ihub2-spoke-desc.png)
+
+4. Click **Create action** drop down and select **Action Designer**
+
+	![iHub Spoke Create Action](screenshots/ihub2-spoke-create-action.png)
+
+5. Let's name the Action Designer: `ITSM REST API Action`. Ensure that the **Application** is selected as the Spoke we created. 
+
+	![iHub Spoke Action Description](screenshots/ihub2-spoke-action-desc.png)
+
+6. Click **Create Input** on the right, and create two input variable. Name them `device` and `limit`. These are the parameters that we would be sending to our REST API Call. 
+
+	![iHub Spoke Inputs](screenshots/ihub2-spoke-inputs.png)
+
+7. Click the '+' symbol below the Inputs in the left pane, to **Add a New Step**. This is where we would put in our REST API Call. 
+
+	![iHub Add Rest API](screenshots/ihub2-add-rest-api.png)
+	
+8. In the pop window, Type **REST** and choose **Perform a REST web service request**.
+
+	![iHub - Select REST](screenshots/ihub2-select-rest.png)
+
+9. In the next screen, make the following selections:
+	- **Connection**: `Define Connection Inline`
+	- **Base URL**: `https:\\itsm-mock-api.servicenow.workers.dev/`
+	- **Build Request**: `Manually`
+	- **Resource Path**: `issues?`
+	- **HTTP Method**: `GET`
+	- Click '+' and add 2 query parameters:
+		- **Name**: `device` and `limit`
+		- Drag the **Input varibles** from the right. These are the ones we had created in the previous step. 
+		- `device` will have `action>device`
+		- `limit` will have `action>limit`
+
+	![iHub - Config REST](screenshots/ihub2-config-rest.png)
+	
+10. Click **Save**. Click **Test** to test our API. 
+	- In the test window, type `PRN-7F3` as **device**
+	- **Limit** it to `4`
+   - Click **Run Test**
+   
+	![iHub - Test REST API](screenshots/ihub2-test-rest-api.png)
+	
+11. If the test is successful, you will see the **Response Body** has been populatd. 
+
+	![iHub - Test REST Result](screenshots/ihub2-test-rest-result.png)
+
+12. Clicking on the **Response Body** shows additional details about the messages returned (raw)
+
+	![iHub - Test Result Raw](screenshots/ihub2-test-rest-result-raw.png)
+
+13. The next thing we need to do is to add a **JSON Parser** as a step after the REST Step. This is to be able to read the individual values from the response body that has been returned. 
+	- Click '+' symbol below the REST Step
+	- Add `JSON Parser` from the list
+
+	![iHub - Choose JSON Parser](screenshots/ihub2-choose-json-parser.png)
+
+14. Once **JSON Parser** Step has been added, drag `Response Body` from `REST Step` on the right panel, to the field **Source Data**
+
+	![iHub - JSON Response Body](screenshots/ihub2-json-response-body.png)
+	
+15. Click **Generate Target**. This will extract the file information from the response body, and this will be displayed in the **Target** Panel
+
+	![iHub - JSON Generate](screenshots/ihub2-json-generate.png)
+	
+16. Now we need add output variable to our **Action Outline**. Click the **Outputs**
+
+	![iHub - Edit Output](screenshots/ihub2-edit-output.png)
+
+17. Click **Edit Output**. Change/Add the label as follows:
+	- Change the **Label** to `device issues`
+	- Change the **Type** to `Array.Object`
+
+	![iHub - Change Label](screenshots/ihub2-edit-output-label.png)
+
+18. Expand the **JSON Parser Step** to review the `root` Object.
+
+	![iHub - JSON Parser Step](screenshots/ihub2-json-parser-step.png)
+
+19. Click **Exit Edit Mode**. Drag the `issues` from the **JSON Parser Step**, into the `device issues` variable. 
+
+	![iHub - Action Output](screenshots/ihub2-action-output.png)
+
+20. **Save** the Action. Now let's test the entire flow by clicking **Test**
+	
+21. While testing the full action, let's provide the following values:
+	- **Device**: `PRN-7F3`
+	- **limit**: `3`
+	
+	![iHub - Test Action](screenshots/ihub2-test-action.png)
+	
+22. After the action has been successfully run, it show show the following:
+
+	![iHub - Test Action Success](screenshots/ihub2-test-action-success.png)
+
+23. If everything has run successfully, the **device issues** should be populated correctly. 	
+	
+	![iHub - Test Action Log](screenshots/ihub2-test-action-log.png)
+	
+23. Click the values displayed in **device issues**, to view the values populated in the `Array Object`
+
+	![iHub - Array Result](screenshots/ihub2-array-result.png)
+	
+24. Everything looks good. Let's **Publish** the action. 
+
+	![iHub - Publish](screenshots/ihub2-publish.png)
+	
+Since we have completed the creation of the spoke. Now we can test it with 2 options. 
+
+-------
+
+## Step: Let's persist this data into a Custom Table
 
 Navigate to **System Definition > Tables** and create a new table:
 
@@ -73,65 +207,6 @@ Navigate to **System Definition > Tables** and create a new table:
 
 ![Ihub Create Table](screenshots/ihub2-table.png)
 
-## Step 3A: Build the Flow in Flow Designer
+--------
 
-1. Go to **Flow Designer > New Flow**.  
-   - Name: `Fetch Device Issues`  
-   ![Ihub New Flow](screenshots/ihub2-flow-new.png)
-   
-2. **Trigger**:  
-   - Type: Scheduled  
-   - Frequency: every 10 minutes  
-   ![Ihub Trigger](screenshots/ihub2-trigger.png) 
-   
-3. **Step 1: HTTP Request**  
-   - Method: GET  
-   - URL: `https://<your-worker>.workers.dev/issues?limit=10`  
-   - Headers: `Accept: application/json`  
-   ![Ihub HTTP Step](screenshots/ihub-http.png)
-   
-![iHub New Spoke](screenshots/ihub2-new-spoke.png)
-
-![iHub Spoke Description](screenshots/ihub2-spoke-desc.png)
-
-![iHub Spoke Action Designer](screenshots/ihub2-spoke-action-designer.png)
-
-![iHub Spoke Create Action](screenshots/ihub2-spoke-create-action.png)
-
-![iHub Spoke Action Description](screenshots/ihub2-spoke-action-desc.png)
-
-![iHub Spoke Inputs](screenshots/ihub2-spoke-inputs.png)
-
-![iHub Add Rest API](screenshots/ihub2-add-rest-api.png)
-
-![iHub - Select REST](screenshots/ihub2-select-rest.png)
-
-![iHub - Config REST](screenshots/ihub2-config-rest.png)
-
-![iHub - Test REST API](screenshots/ihub2-test-rest-api.png)
-
-![iHub - Test REST Result](screenshots/ihub2-test-rest-result.png)
-
-![iHub - Test Result Raw](screenshots/ihub2-test-rest-result-raw.png)
-
-![iHub - Choose JSON Parser](screenshots/ihub2-choose-json-parser.png)
-
-![iHub - JSON Response Body](screenshots/ihub2-json-response-body.png)
-
-![iHub - JSON Generate](screenshots/ihub2-json-generate.png)
-
-![iHub - Edit Output](screenshots/ihub2-edit-output.png)
-
-![iHub - Action Output](screenshots/ihub2-action-output.png)
-
-![iHub - JSON Parser Step](screenshots/ihub2-json-parser-step.png)
-
-![iHub - Test Action](screenshots/ihub2-test-action.png)
-
-![iHub - Test Action Success](screenshots/ihub2-test-action-success.png)
-
-![iHub - Test Action Log](screenshots/ihub2-test-action-log.png)
-
-![iHub - Array Result](screenshots/ihub2-array-result.png)
-
-![iHub - Publish](screenshots/ihub2-publish.png)
+## Step: Let's build an AI Agent to call this API 
