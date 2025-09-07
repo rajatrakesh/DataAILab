@@ -21,8 +21,9 @@ By completing this workshop, you will:
 
 | Section | Topic | Estimated Time |
 |---------|-------|----------------|
-| **Kinddie**
+| **Kindergarten**
 | [Lab Configuration](lab-configuration.md) | Initial setup and verification | 5 minutes |
+| [Section 0](section00-ihubv2a.md) | Using Integration Hub | 40 minutes | 
 | [Section 1](section01-start-using-genai.md) | Start using Gen AI on Day 1 | 5 minutes |
 | [Section 2](section02-building-agents-simple.md) | Building AI Agents and Use Cases | 20 minutes |
 | [Section 3](section03-design-knowledge-graph.md) | Building Knowledge Graph and AI Agent | 30 minutes |
