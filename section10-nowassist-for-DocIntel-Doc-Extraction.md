@@ -381,6 +381,6 @@ Once you're done, you will see the the incident record with the below values!
 ![ITxNA4DI](screenshots/NADIUseCaseAutofillComplete.png)
 
 
-**Next Section:** [Section 11 - Building incident error extract](section11-building-incident-error-extract-ai-agent.md.md)
+**Next Section:** [Section 11 - Building incident error extract](section11-building-incident-error-extract-ai-agent.md)
 **Previous Section:** [Section 10 nowassist-for-DocIntel-Doc-Extraction](section10-nowassist-for-DocIntel-Doc-Extraction.md)
 **Back to:** [Main README](README.md)
