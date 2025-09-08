@@ -296,4 +296,13 @@ You have successfully:
 
 ***
 
+### Extra Credit:
+
+* Create an Agentic Workflow to do the following:
+	- Assign an Incident in the right Category and Sub-Category
+	- Create a resolution plan to resolve the incident
+	- Update the resolution plan in work notes
+
+
+
 **Next Section:** [Section 3 - Building Knowledge Graph and AI Agents](section3-design-knowledge-graph.md) **Previous Section:**[Section 1 - Start Using Gen AI](section1-start-using-genai.md) **Back to:**[Main README](./)
