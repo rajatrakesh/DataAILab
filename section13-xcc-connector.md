@@ -1,4 +1,4 @@
-## Building XCC Connector for Sharepoint
+## Section 13: Building XCC Connector for Sharepoint
 
 As part of this section we will give details on how to connect to sharepoint online using ServiceNow XCC Connector.
 
