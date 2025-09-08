@@ -93,7 +93,7 @@ The mock service is hosted online and returns JSON data about device issues.
 
 9. In the next screen, make the following selections:
 	- **Connection**: `Define Connection Inline`
-	- **Base URL**: `https:\\itsm-mock-api.servicenow.workers.dev/`
+	- **Base URL**: `https://itsm-mock-api.servicenow.workers.dev/`
 	- **Build Request**: `Manually`
 	- **Resource Path**: `issues?`
 	- **HTTP Method**: `GET`
