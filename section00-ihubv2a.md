@@ -128,7 +128,7 @@ The mock service is hosted online and returns JSON data about device issues.
 
 14. Once **JSON Parser** Step has been added, drag `Response Body` from `REST Step` on the right panel, to the field **Source Data**. You would also need to **manually** copy the **Response Body** from the prior test into the block below, before you are able to **Generate Target**. 
 
->If you no longer have that, you can run that same base url earlier in a browser window to get the json text. 
+	>If you no longer have that, you can run that same base url earlier in a browser window to get the json text. 
 
 	![iHub - JSON Response Body](screenshots/ihub2-json-response-body.png)
 	
