@@ -131,10 +131,6 @@ Create the following tools by selecting the **Add tool** option:
 
 7. Click **Add**
 
-**Tool 2: Update Additional Comments**
-
-## Redundant - We can remove this
-
 8. Create the next tool by selecting **Add tool** again:
 
 * **Select:** Flow Action
