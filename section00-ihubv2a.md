@@ -184,7 +184,7 @@ Since we have completed the creation of the spoke. Now we can test it with 2 opt
 
 ## Step: Let's persist this data into a Custom Table
 
-Navigate to **System Definition > Tables** and create a new table:
+Navigate to **System Definition > Tables** and create a new table. Please ensure that your application scope is the same that you chose before. 
 
 ![Ihub Create Table](screenshots/ihub2-createtable.png)
 
