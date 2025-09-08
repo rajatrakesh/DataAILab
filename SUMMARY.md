@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Data and AI Bootcamp](README.md)
-* [Lab Configuration](lab-configuration.md)
 * [Section 0: Using Integration Hub –  (Two Approaches)](section00-ihubv2a.md)
 * [Section 01: Start using Gen AI on Day 1](section01-start-using-genai.md)
 * [Section 02: Building Agents and Use Cases](section02-building-agents-simple.md)
