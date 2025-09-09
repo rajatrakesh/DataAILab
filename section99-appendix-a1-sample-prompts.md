@@ -148,23 +148,26 @@ When an employee termination request is approved:
 ## Tips for Success
 
 ### Flow Generation Tips
-- Use clear, sequential language
-- Specify conditions and triggers explicitly
-- Include timing requirements (wait, delay, schedule)
-- Mention parallel vs sequential execution when needed
+
+* Use clear, sequential language
+* Specify conditions and triggers explicitly
+* Include timing requirements (wait, delay, schedule)
+* Mention parallel vs sequential execution when needed
 
 ### Code Generation Tips
-- Include specific ServiceNow APIs you want to use (GlideRecord, GlideAggregate, etc.)
-- Mention security considerations
-- Specify logging requirements
-- Include performance considerations for large datasets
+
+* Include specific ServiceNow APIs you want to use (GlideRecord, GlideAggregate, etc.)
+* Mention security considerations
+* Specify logging requirements
+* Include performance considerations for large datasets
 
 ### Testing and Refinement
-- Start with simple prompts and build complexity
-- Test generated code in a development environment
-- Refine prompts based on results
-- Save successful prompt patterns for reuse
 
----
+* Start with simple prompts and build complexity
+* Test generated code in a development environment
+* Refine prompts based on results
+* Save successful prompt patterns for reuse
 
-**Back to:** [Main README](README.md) | **Next:** [Appendix A2: Agent Ideas](appendix-a2-agent-ideas.md)
+***
+
+**Back to:** [Main README](./) | **Next:** [Appendix A2: Agent Ideas](section99-appendix-a2-agent-ideas.md)

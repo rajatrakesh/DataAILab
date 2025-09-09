@@ -5,10 +5,11 @@ In this section, we will run a quick fix to ensure AI Search is running on your 
 ## When to Use This Appendix
 
 Use this troubleshooting guide if:
-- AI Search shows as **inactive** in the Lab Configuration section
-- You see error messages related to AI Search functionality
-- Now Assist features are not working properly
-- The green checkmark is missing from AI Search Status
+
+* AI Search shows as **inactive** in the Lab Configuration section
+* You see error messages related to AI Search functionality
+* Now Assist features are not working properly
+* The green checkmark is missing from AI Search Status
 
 ![AI Search Inactive](screenshots/ai-search-inactive.png)
 
@@ -25,8 +26,8 @@ Use this troubleshooting guide if:
 ### Step 2: Login with Service Account
 
 3. Log into your instance again, this time with the following **service credentials**:
-   - **User:** `aislab.admin`
-   - **Password:** `aislab.admin`
+   * **User:** `aislab.admin`
+   * **Password:** `aislab.admin`
 
 ![Service Account Login](screenshots/service-account-login.png)
 
@@ -55,7 +56,7 @@ Use this troubleshooting guide if:
 ### Step 6: Return to Admin Access
 
 8. Use your **magic link** to log in again as admin
-9. To return to the beginning of the lab, [click here](lab-configuration.md)
+9. To return to the beginning of the lab, [click here](broken-reference)
 
 ## Verification Steps
 
@@ -80,30 +81,34 @@ After completing the repair process, verify that AI Search is working:
 ### Issue: Repair Tool Not Found
 
 **Solution:**
-- Ensure you're logged in with the `aislab.admin` account
-- Clear browser cache and try again
-- Check that you're on the correct instance URL
+
+* Ensure you're logged in with the `aislab.admin` account
+* Clear browser cache and try again
+* Check that you're on the correct instance URL
 
 ### Issue: Reset Button Grayed Out
 
 **Solution:**
-- Verify service account permissions
-- Wait for any background processes to complete
-- Refresh the page and try again
+
+* Verify service account permissions
+* Wait for any background processes to complete
+* Refresh the page and try again
 
 ### Issue: Reset Doesn't Complete
 
 **Solution:**
-- Wait longer (process can take 5-10 minutes)
-- Check browser console for error messages
-- Try logging out and back in with magic link
+
+* Wait longer (process can take 5-10 minutes)
+* Check browser console for error messages
+* Try logging out and back in with magic link
 
 ### Issue: Still Showing Inactive After Repair
 
 **Solution:**
-- Perform the reset process again
-- Contact lab administrator for instance-specific issues
-- Check ServiceNow community for known issues
+
+* Perform the reset process again
+* Contact lab administrator for instance-specific issues
+* Check ServiceNow community for known issues
 
 ## Alternative Repair Methods
 
@@ -127,68 +132,72 @@ For persistent issues:
 
 ### Maintaining AI Search Health
 
-- Don't modify AI Search configurations during the lab
-- Avoid running multiple AI operations simultaneously
-- Clear browser cache between different lab sections
-- Use incognito/private browsing mode if experiencing issues
+* Don't modify AI Search configurations during the lab
+* Avoid running multiple AI operations simultaneously
+* Clear browser cache between different lab sections
+* Use incognito/private browsing mode if experiencing issues
 
 ### Best Practices
 
-- Always verify AI Search status before starting lab sections
-- Report persistent issues to lab administrators
-- Keep the repair steps bookmarked for quick access
-- Document any custom configurations that might interfere
+* Always verify AI Search status before starting lab sections
+* Report persistent issues to lab administrators
+* Keep the repair steps bookmarked for quick access
+* Document any custom configurations that might interfere
 
 ## Instance Specifications
 
 ### Required Components
 
 For AI Search to function properly, your instance needs:
-- **Machine Learning Framework:** Active
-- **AI Search Plugin:** Activated
-- **Natural Language Understanding:** Enabled
-- **Semantic Search:** Configured
-- **Vector Database:** Operational
+
+* **Machine Learning Framework:** Active
+* **AI Search Plugin:** Activated
+* **Natural Language Understanding:** Enabled
+* **Semantic Search:** Configured
+* **Vector Database:** Operational
 
 ### Resource Requirements
 
-- **Memory:** Sufficient for ML model loading
-- **CPU:** Available for search processing
-- **Storage:** Space for indexes and models
-- **Network:** Connectivity to ServiceNow AI services
+* **Memory:** Sufficient for ML model loading
+* **CPU:** Available for search processing
+* **Storage:** Space for indexes and models
+* **Network:** Connectivity to ServiceNow AI services
 
 ## Troubleshooting Checklist
 
 Before using this repair process, verify:
 
-- [ ] Correct instance URL
-- [ ] Proper user permissions
-- [ ] Browser compatibility (Chrome, Firefox, Safari latest versions)
-- [ ] No VPN or proxy interference
-- [ ] JavaScript enabled
-- [ ] Pop-up blockers disabled for ServiceNow domain
-- [ ] Sufficient system resources (not running too many browser tabs)
+* [ ] Correct instance URL
+* [ ] Proper user permissions
+* [ ] Browser compatibility (Chrome, Firefox, Safari latest versions)
+* [ ] No VPN or proxy interference
+* [ ] JavaScript enabled
+* [ ] Pop-up blockers disabled for ServiceNow domain
+* [ ] Sufficient system resources (not running too many browser tabs)
 
 ## Support Resources
 
 If repair steps don't resolve the issue:
 
 ### ServiceNow Resources
-- ServiceNow Community Forums
-- ServiceNow Documentation Portal
-- Now Support (if you have access)
+
+* ServiceNow Community Forums
+* ServiceNow Documentation Portal
+* Now Support (if you have access)
 
 ### Lab-Specific Help
-- Check with workshop facilitator
-- Review lab instance documentation
-- Contact lab technical support
+
+* Check with workshop facilitator
+* Review lab instance documentation
+* Contact lab technical support
 
 ### Browser and System
-- Update to latest browser version
-- Clear all browser data for ServiceNow domain
-- Try different browser or incognito mode
-- Restart browser completely
 
----
+* Update to latest browser version
+* Clear all browser data for ServiceNow domain
+* Try different browser or incognito mode
+* Restart browser completely
 
-**Back to:** [Lab Configuration](lab-configuration.md) | **Main Menu:** [README](README.md) | **Next:** [Appendix A4](appendix-a4-application-scope.md)
+***
+
+**Back to:** [Lab Configuration](broken-reference) | **Main Menu:** [README](./) | **Next:** [Appendix A4](section99-appendix-a4-application-scope.md)
