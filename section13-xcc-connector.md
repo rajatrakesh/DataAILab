@@ -219,6 +219,8 @@ Amazing! We now have a connection establised!
 
 ![SS34](screenshots/SS34.png)
 
+Perfect! We are good.
+
 
 
 
