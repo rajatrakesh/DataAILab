@@ -147,7 +147,7 @@ You will see `Attachments` window come up, Click Choose file.
 
 Select the `error` screenshot present as part of the exercise.
 
-![ITxNA4DI](screenshots/error.png)
+<img src="screenshots/error.png" alt="ITxNA4DI" height="500" width="700"/>
 
 ![ITxNA4DI](screenshots/TableIncident4.png)
 
