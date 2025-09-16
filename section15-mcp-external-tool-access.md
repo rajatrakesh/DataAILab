@@ -1,17 +1,47 @@
 # Section 15: MCP External Tool Access in ServiceNow MCP Client
 
+## What is AI Agent Fabric?
+
+AI Agent Fabric is ServiceNow’s communication framework that connects AI agents and tools across any 
+platform to deliver seamless, end-to-end automation. It enables agents to collaborate using shared protocols 
+like Agent-to-Agent (A2A) and Model Context Protocol (MCP), breaking down silos and eliminating duplication. 
+What sets ServiceNow apart is its ability to unify multi-agent and multi-tool ecosystems with built-in 
+governance, memory, and workflow execution, on a single enterprise-grade platform.
+
 ## What is MCP?
 
 **MCP - Model Context Protocol** 
 - A standard that enables AI agents to securely interact with enterprise systems where data resides, such as content repositories, business applications, development environments and databases. 
 - This allows enterprise businesses to reduce the integration challenges of manual workflows, thereby delivering outcomes from models more quickly. Since then, MCP servers have become foundational for agentic applications, providing a consistent and secure mechanism for invoking tools and retrieving data.
 
+**What is the difference between MCP Server & MCP Client?**
+
+An MCP Server is the provider that hosts and exposes tools, information, or capabilities for AI agents to access. 
+It responds to structured requests from clients and delivers actionable outputs like incident summaries or HR 
+case data. 
+An MCP Client is the consumer that connects to one or more MCP Servers to request information or 
+trigger actions via exposed tools. 
+In ServiceNow, the MCP Client app allows AI agents to connect to external MCP Servers, while the MCP Server lets external agents leverage Now Assist skills. This distinction helps sellers 
+explain how ServiceNow supports both inbound and outbound AI orchestration, enabling customers to integrate with external systems or expose their own capabilities, all within a governed, scalable framework.
+
 **Why MCP ?**
+
 - Open Standard introduced by Anthropic
 - Enables AI Agents to access external tools, data and context
 - Acts as universal connector for AI systems
 - Standardizes communication between AI models and Enterprise systems
 - Essential for scalable and interoperable AI Integrations
+
+**How is MCP different from Zero Copy or APIs offered within the Workflow Data Fabric SKU?**
+
+At first glance, MCP may resemble an API layer, but the difference lies in how context is handled, what standards are used, and the purpose of the requests. MCP is a standardized protocol that allows AI agents to 
+discover and interact with external tools and data sources in real time, in a format optimized for large language models. 
+
+It enables agents to understand and act autonomously without custom code or system-specific logic. 
+
+In contrast, API connectors within Workflow Data Fabric are built to integrate systems and unify data into a single model that powers ServiceNow workflows, giving enterprise-wide data context to 
+ServiceNow AI Agents and skills. 
+These connectors, such as Zero Copy or external content connectors, focus on data access and normalization, allowing users to view and act on data without duplication. 
 
 
 ## ServiceNow as MCP Client
@@ -45,8 +75,10 @@ Prerequisites:
 1. Platform version: YP6+ / ZP1+
 2. Application: Now Assist AI Agents 5.0.24+
 
-Download and install Model Context Protocol Client
-https://store.servicenow.com/store/app/5eeda18f1b996a10229141d1b24bcbfc
+Go to `All`, search for `Plugins`, open plugins under `System Definition`
+Search for `Model Context Protocol Client` (version 1.0.7) and install
+
+![MCP](screenshots/mcp-add-server12.png)
 
 Login as maint role user, update MCP tool property, `sn_aia.enable_mcp_tool`, and set to `true`
 Once done, logout!
