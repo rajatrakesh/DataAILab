@@ -35,7 +35,16 @@ Install Store Application External Content Connector Sharepoint Online
 
 ![SS2](screenshots/SS2.png)
 
-Once we have installed the XCC Store Application, to configure access, we need to have access certificate.
+Once we have installed the XCC Store Application, 
+
+**Here we have two sections to move forward, one where we leverage the demohub XCC setup and we will also cover setup from scratch**
+
+
+### Let's Get Started with Section 1
+
+**Section 1: XCC setup from scratch**
+
+To configure access, we need to have access certificate.
 
 If you're on Mac, Open Terminal and type: java -version
 
