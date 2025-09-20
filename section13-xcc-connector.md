@@ -128,12 +128,16 @@ With this we copy Application ID, Directory ID
 ![SS13](screenshots/SS13.png)
 
 ![SS14](screenshots/SS14.png)
-
+```
 AppId / ClientId: 159fc313-f41c-4555-903d-e1fa656ea18f
 ObjectId: e95b45a9-3687-4f71-b28c-dbcfe63b2401
 TenantId: 187b0a59-9ed0-4e4b-91c9-19a4bce5b0ae
+```
 
 Next we go to Manage (from the left Pane) and go to **App Registration**
+
+
+![SS15](screenshots/SS15.png)
 
 Now we add new API permission, for **Microsoft Graph**
 
@@ -141,13 +145,16 @@ Select Application Permissions
 Search for **Group.Read.All**
 and Add permission
 
-![SS15](screenshots/SS15.png)
 ![SS16](screenshots/SS16.png)
-![SS17](screenshots/SS17.png)
 
-Similarly, we now add two more Application Permissions under Microsoft Graph
+Similarly, we now add second Application Permissions under Microsoft Graph
 
 **User.Read.All**
+
+![SS17](screenshots/SS17.png)
+
+And, we now add third Application Permissions under Microsoft Graph
+
 **Sites.Read.All**
 
 ![SS18](screenshots/SS18.png)
@@ -155,12 +162,12 @@ Similarly, we now add two more Application Permissions under Microsoft Graph
 Next, we add another critical permission for **Site Full Control**
 **Sites.FullControl.All**
 
-![SS19](screenshots/SS19.png)
-
 ![SS21](screenshots/SS21.png)
 
-
 Next, part is granting **Admin Consent**
+
+
+![SS19](screenshots/SS19.png)
 
 ![SS22](screenshots/SS22.png)
 
@@ -228,10 +235,34 @@ Amazing! We now have a connection establised!
 
 ![SS34](screenshots/SS34.png)
 
+Click `Save and Validate`
+
 Perfect! We are good.
 
+Now Let's go and check the connection in the **External Content Connector Home** Page
 
+![xcc-sp-sn1](screenshots/xcc-sp-sn1.png)  
 
+Let's try and do one full crawl of the sharepoint that we have setup.
+
+Go to `Create Crawl`, click `Create one-time crawl`
+
+In the pop-up window, choose the crawl type, i.e., `Full Document Crawl` and click `Start`
+
+![xcc-sp-sn2](screenshots/xcc-sp-sn2.png)  
+
+This will do a complete crawl of sharepoint endpoint and will make the content accessible in the instance, which later can be leveraed in Search or Virtual Agent.
+
+![xcc-sp-sn3](screenshots/xcc-sp-sn3.png)  
+
+Now, let's try `User Mapping` as part of the crawl.
+This helps us bring the same source mapping from sharepoint for users, to make sure the data is accessible for only user which are member of the sharepoint. 
+
+![xcc-sp-sn4](screenshots/xcc-sp-sn4.png)  
+
+![xcc-sp-sn5](screenshots/xcc-sp-sn5.png)  
+
+Great! With this we have seen how the External content connection can be established, and how to crawl the sharepoint.
 
 
 
