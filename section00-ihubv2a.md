@@ -67,13 +67,17 @@ The mock service is hosted online and returns JSON data about device issues.
    
 	![iHub New Spoke](screenshots/ihub2-new-spoke.png)
 
-3. Give is a **Name** : `ITSM Rest API Spoke` and **Description**: `Spoke for REST API Call` and click **Continue**.
+3. Give is a **Name** : `ITSM Rest API Spoke` or `ITSM Rest Spoke` and **Description**: `Spoke for REST API Call` and click **Continue**.
 
 	![iHub Spoke Description](screenshots/ihub2-spoke-desc.png)
 
-4. Click **Create action** drop down and select **Action Designer**
+4. Click **Using Action Designer**
 
 	![iHub Spoke Create Action](screenshots/ihub2-spoke-create-action.png)
+
+   Click **Create action** drop down and select **Action Designer**
+
+   ![iHub Spoke Create Action](screenshots/ihub2-spoke-create-action1.png)   
 
 5. Let's name the Action Designer: `ITSM REST API Action`. Ensure that the **Application** is selected as the Spoke we created. 
 
