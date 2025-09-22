@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Data and AI Bootcamp](README.md)
-* [Section 0: Using Integration Hub –  (Two Approaches)](section00-ihubv2a.md)
+* [Section 0: Using Integration Hub – (Two Approaches)](section00-ihubv2a.md)
 * [Section 01: Start using Gen AI on Day 1](section01-start-using-genai.md)
 * [Section 02: Building Agents and Use Cases](section02-building-agents-simple.md)
 * [Section 03: Create a Knowledge Graph](section03-design-knowledge-graph.md)
@@ -14,7 +14,7 @@
 * [Section 10: Now Assist for Document Intelligence](section10-nowassist-for-DocIntel-Doc-Extraction.md)
 * [Section 11 - Building Incident Error Extraction AI Agent](section11-building-incident-error-extract-ai-agent.md)
 * [Section 12: Advanced Features and Integration](section12-advanced-features.md)
-* [Building XCC Connector for Sharepoint](section13-xcc-connector.md)
+* [Section 13: Building XCC Connector for Sharepoint](section13-xcc-connector.md)
 * [Appendix A1: Now Creator Sample Prompts](section99-appendix-a1-sample-prompts.md)
 * [Appendix A2: Agent Ideas](section99-appendix-a2-agent-ideas.md)
 * [Appendix A3: AI Search Set-Up](section99-appendix-a3-ai-search-setup.md)
