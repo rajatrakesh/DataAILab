@@ -1,4 +1,4 @@
-# Section 14: Zero Copy Connectors Lab
+# Section 14: Zero Copy Connectors Lab Guide
 
 Pre-requisites:
 Zero Copy Connectors setup (Estimated time 15 minutes)
