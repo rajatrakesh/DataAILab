@@ -15,6 +15,7 @@
 * [Section 11 - Building Incident Error Extraction AI Agent](section11-building-incident-error-extract-ai-agent.md)
 * [Section 12: Advanced Features and Integration](section12-advanced-features.md)
 * [Section 13: Building XCC Connector for Sharepoint](section13-xcc-connector.md)
+* [Section 14: Zero Copy Connectors](section14-zero-copy.md) 
 * [Appendix A1: Now Creator Sample Prompts](section99-appendix-a1-sample-prompts.md)
 * [Appendix A2: Agent Ideas](section99-appendix-a2-agent-ideas.md)
 * [Appendix A3: AI Search Set-Up](section99-appendix-a3-ai-search-setup.md)
