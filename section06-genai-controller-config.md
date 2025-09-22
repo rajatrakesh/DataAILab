@@ -20,6 +20,9 @@ Before starting this section, ensure you have:
 - API key from your LLM provider
 
 > **⚠️ Security Note:** The API key provided in this lab is for training purposes only. In production, use your own secured API keys.
+> For the lab you can use this: 
+
+`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`
 
 ## Step 1: Access OneExtend Capability Configuration
 
