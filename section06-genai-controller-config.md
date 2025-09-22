@@ -19,8 +19,7 @@ Before starting this section, ensure you have:
 - Administrative access to the instance
 - API key from your LLM provider
 
-> **⚠️ Security Note:** The API key provided in this lab is for training purposes only. In production, use your own secured API keys.
-> For the lab you can use the key provided by your instructor. 
+> **⚠️ Security Note:** The API key for this lab would be provided by your instructor. 
 
 ## Step 1: Access OneExtend Capability Configuration
 
