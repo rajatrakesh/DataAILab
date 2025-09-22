@@ -305,4 +305,4 @@ Let's execute this agent with the prompt `Find the past 3 issues encountered by 
 
 This completes the lab for **Integration Hub**. 
 
-**Next Step:** [Section 1 - Start using Gen AI on Day 1](section1-start-using-genai.md)
+**Next Step:** [Section 2 - Building Agents and Use Cases](section02-building-agents-simple)
