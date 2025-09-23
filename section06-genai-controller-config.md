@@ -37,11 +37,10 @@ In this lab, we will be enabling three capabilities:
    sys_one_extend_capability.list
    ```
 
+**Open the record** for the capability you want to configure, such as **Sentiment Analysis**.
+   In this case, open the second record, where the external is `false`
+
 ![OneExtend Capability Table](screenshots/image1.png)
-
-2. **Open the record** for the capability you want to configure, such as **Sentiment Analysis**.
-
-![Sentiment Analysis Record](screenshots/image2.png)
 
 ## Step 2: Configure Sentiment Analysis Capability
 
